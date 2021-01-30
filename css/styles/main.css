@@ -56,12 +56,12 @@
 }
 .section {
   width: 100vw;
-  height: 99vh;
+  height: 100vh;
 }
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: 68.75rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -78,8 +78,8 @@
 .intro-bg::before {
   content: "";
   display: block;
-  height: 112px;
-  width: 59px;
+  height: 7rem;
+  width: 3.6875rem;
   position: absolute;
   background-image: url(../../image/intro/leaf-l_bg.png);
   top: 92%;
@@ -89,8 +89,8 @@
 .intro-bg::after {
   content: "";
   display: block;
-  height: 108px;
-  width: 111px;
+  height: 6.75rem;
+  width: 6.9375rem;
   position: absolute;
   background-image: url(../../image/intro/beery-r_bg.png);
   top: 93%;
@@ -99,7 +99,7 @@
 }
 
 .intro-container {
-  padding: 24px 80px 0;
+  padding: 1.5rem 5rem 0;
   height: 100%;
   justify-content: space-between;
   position: relative;
@@ -107,8 +107,8 @@
 .intro-container::before {
   content: "";
   display: block;
-  height: 105px;
-  width: 141px;
+  height: 6.5625rem;
+  width: 8.8125rem;
   position: absolute;
   background-image: url(../../image/intro/leaf-m_bg.png);
   top: 92%;
@@ -118,8 +118,8 @@
 .intro-container::after {
   content: "";
   display: block;
-  height: 203px;
-  width: 236px;
+  height: 12.6875rem;
+  width: 14.75rem;
   position: absolute;
   background-image: url(../../image/intro/leaf-r_bg.png);
   top: 55%;
@@ -135,14 +135,16 @@
 }
 
 .logo {
-  width: 53px;
-  height: 39px;
+  width: 3.3125rem;
+  height: 2.4375rem;
   background-image: url(../../image/intro/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .nav {
   width: 65%;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .nav__list {
   display: flex;
@@ -166,13 +168,13 @@
 }
 .contacts__icon {
   display: inline-block;
-  width: 12px;
-  height: 11px;
+  width: 0.75rem;
+  height: 0.6875rem;
   background-image: url(../../image/intro/phone.png);
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 .contacts__number {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -184,21 +186,21 @@
 }
 .fixed-menu__items {
   display: block;
-  height: 6px;
-  width: 6px;
-  border: 1px solid #fff;
+  height: 0.375rem;
+  width: 0.375rem;
+  border: 0.0625rem solid #fff;
   background-color: #fff;
   border-radius: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   position: relative;
 }
 .fixed-menu__items_active::after {
   content: "";
   position: absolute;
   display: block;
-  height: 13px;
-  width: 13px;
-  border: 1px solid #fff;
+  height: 0.8125rem;
+  width: 0.8125rem;
+  border: 0.0625rem solid #fff;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -206,13 +208,13 @@
 }
 
 .section-content {
-  margin: 110px 0 60px 0;
+  margin: 6.875rem 0 3.75rem 0;
   text-align: left;
   color: #fff;
 }
 
 .intro-title {
-  width: 350px;
+  width: 21.875rem;
 }
 
 .main-content {
@@ -230,8 +232,8 @@
 .intro-content-jpg::before {
   content: "";
   display: block;
-  height: 208px;
-  width: 220px;
+  height: 13rem;
+  width: 13.75rem;
   position: absolute;
   background-image: url(../../image/intro/beery-m_bg.png);
   top: 65%;
@@ -240,31 +242,31 @@
 
 .title-intro__inner {
   font-family: AlegreyaSans-Bold;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .intro-subtitle {
   font-family: AlegreyaSans-Thin;
-  font-size: 21px;
-  margin: 23px 0 32px;
+  font-size: 1.3125rem;
+  margin: 1.4375rem 0 2rem;
 }
 
 .btn-intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 58px;
-  width: 156px;
+  height: 3.625rem;
+  width: 9.75rem;
   border-radius: 30px;
   border: 1px solid #fff;
   background-color: #fff;
   color: #365a49;
   text-transform: uppercase;
   font-family: AlegreyaSans-ExtraBold;
-  font-size: 19px;
-  margin-top: 32px;
+  font-size: 1.1875rem;
+  margin-top: 2rem;
   transition: 0.5s;
 }
 .btn-intro:hover {
@@ -278,11 +280,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .intro-discriptions__item {
-  margin-right: 46px;
-  font-size: 16px;
+  margin-right: 2.875rem;
+  font-size: 1rem;
   font-family: AlegreyaSans-Regular;
   color: #fff;
   display: flex;
@@ -292,33 +294,33 @@
   margin-right: 0;
 }
 .intro-discriptions__text {
-  width: 80px;
+  width: 5rem;
 }
 .intro-discriptions__icon {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
 }
 .intro-discriptions__icon_nature {
   background-image: url(../../image/intro/nature_icon.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 7px;
+  margin-right: 0.4375rem;
 }
 .intro-discriptions__icon_dilivery {
   background-image: url(../../image/intro/dilivery_icon.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 7px;
+  margin-right: 0.4375rem;
 }
 .intro-discriptions__icon_diet {
   background-image: url(../../image/intro/diet_icon.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 7px;
+  margin-right: 0.4375rem;
 }
 
 .reasons-bg {
@@ -332,37 +334,38 @@
 .reasons-bg::before {
   content: "";
   display: block;
-  height: 315px;
-  width: 161px;
+  height: 19.6875rem;
+  width: 10.0624rem;
   position: absolute;
   background-image: url(../../image/reasons/beery_bg.png);
+  background-size: auto;
   top: 80%;
   left: 0;
   z-index: 1;
 }
 
 .reasons-container {
-  padding: 0 80px 0;
+  padding: 0 5rem 0;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 .reasons-title {
-  width: 410px;
+  width: 25.625rem;
 }
 .reasons-title__inner {
-  margin-top: 110px;
+  margin-top: 6.875rem;
   font-family: AlegreyaSans-Bold;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .subtitle-reasons {
   font-family: AlegreyaSans-Thin;
-  font-size: 18px;
-  margin: 25px 0 60px;
+  font-size: 1.125rem;
+  margin: 1.15625rem 0 3.75rem;
   color: #666666;
 }
 
@@ -374,7 +377,7 @@
 }
 
 .reasons-list {
-  width: 280px;
+  width: 17.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -384,21 +387,21 @@
 }
 .reasons-list::after {
   content: "";
-  height: 21px;
-  width: 67px;
+  height: 1.3125rem;
+  width: 4.1875rem;
   display: block;
   position: absolute;
   background-image: url(../../image/reasons/list-bg.png);
   top: 15%;
-  left: 17em;
+  left: 17rem;
 }
 .reasons-list:last-child::after {
   content: "";
   display: none;
 }
 .reasons-list__icon {
-  width: 125px;
-  height: 125px;
+  width: 7.8125rem;
+  height: 7.8125rem;
   display: block;
 }
 .reasons-list__icon_heplful {
@@ -412,13 +415,13 @@
 }
 .reasons-list__title {
   font-family: AlegreyaSans-Bold;
-  font-size: 27px;
+  font-size: 1.6875rem;
   color: #000;
-  margin: 35px 0 30px 0;
+  margin: 2.1875rem 0 1.875rem 0;
 }
 .reasons-list__text {
   font-family: AlegreyaSans-Regular;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #666666;
 }
 
@@ -431,8 +434,8 @@
 .reviews-bg::before {
   content: "";
   display: block;
-  height: 321px;
-  width: 150px;
+  height: 20.0625rem;
+  width: 9.375rem;
   position: absolute;
   background-image: url(../../image/reviews/beery-bl.png), url(../../image/reviews/reviews-bg.png);
   background-repeat: no-repeat;
@@ -442,21 +445,21 @@
 }
 
 .reviews-container {
-  padding: 66px 80px;
+  padding: 4.125rem 5rem;
   align-items: center;
   justify-content: center;
 }
 
 .reviews-title {
   font-family: AlegreyaSans-Bold;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 
 .reviews-content {
-  padding: 51px 45px 34px;
+  padding: 3.125rem 2.75rem 2.125rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -468,33 +471,33 @@
 }
 
 .reviews-text {
-  margin-left: 18px;
+  margin-left: 1.125rem;
   text-align: left;
-  width: 440px;
+  width: 27.5rem;
 }
 .reviews-text__title {
   font-family: AlegreyaSans-Bold;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .reviews-text__inner {
   font-family: AlegreyaSans-Regular;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #666666;
 }
 .reviews-text__author {
   font-family: AlegreyaSans-Medium;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .reviews-list {
   display: flex;
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 .reviews-list__users {
-  width: 67px;
-  height: 67px;
+  width: 4.1875rem;
+  height: 4.1875rem;
   display: block;
-  margin-right: 11px;
+  margin-right: 0.6875rem;
 }
 .reviews-list__users:last-child {
   margin-right: 0;
@@ -502,20 +505,20 @@
 .reviews-list__users_user1 {
   background-image: url(../../image/reviews/user1.png);
   background-size: cover;
-  border: 1px solid #fff;
-  border-radius: 100px;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
 }
 .reviews-list__users_user2 {
   background-image: url(../../image/reviews/user2.png);
   background-size: cover;
-  border: 1px solid #fff;
-  border-radius: 100px;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
 }
 .reviews-list__users_user3 {
   background-image: url(../../image/reviews/user3.png);
   background-size: cover;
-  border: 1px solid #fff;
-  border-radius: 100px;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
 }
 
 .delivery-bg {
@@ -526,7 +529,7 @@
 }
 
 .delivery-container {
-  padding: 86px 80px 90px;
+  padding: 5.375rem 5rem 5.625rem;
   align-items: center;
   justify-content: center;
 }
@@ -534,10 +537,10 @@
 .delivery-title {
   color: #365a49;
   font-family: AlegreyaSans-Bold;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .delivery-form {
@@ -546,83 +549,83 @@
   justify-content: space-between;
   font-family: AlegreyaSans-Regular;
   width: 100%;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: left;
   color: #365a49;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 .delivery-form input:focus {
-  outline: 2px solid #365a49;
+  outline: 0.125rem solid #365a49;
 }
 .delivery-form textarea:focus {
-  outline: 2px solid #365a49;
+  outline: 0.125rem solid #365a49;
 }
 
 .form-left {
-  width: 460px;
+  width: 28.75rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .form-left input {
   border: none;
-  padding: 17px 11px;
-  margin-bottom: 20px;
+  padding: 1.0625rem 0.6875rem;
+  margin-bottom: 1.25rem;
   color: #000;
 }
 .form-left input[type=name] {
-  width: 220px;
+  width: 13.75rem;
 }
 .form-left input[type=number] {
-  width: 220px;
+  width: 13.75rem;
 }
 .form-left input[type=streat] {
-  width: 460px;
+  width: 28.75rem;
 }
 .form-left input[type=address] {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .form-right {
-  width: 460px;
+  width: 28.75rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .form-right textarea {
   border: none;
-  padding: 17px 11px;
-  margin-bottom: 20px;
+  padding: 1.0625rem 0.6875rem;
+  margin-bottom: 1.25rem;
   color: #000;
-  width: 460px;
-  height: 180px;
+  width: 28.75rem;
+  height: 11.25rem;
 }
 .form-right input {
   display: none;
 }
 
 .form-payment {
-  padding: 5px 5px;
+  padding: 0.3125rem;
   display: inline-flex;
   cursor: pointer;
   align-items: center;
 }
 .form-payment__radio {
   display: inline-block;
-  height: 18px;
-  width: 18px;
+  height: 1.125rem;
+  width: 1.125rem;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 0.0625rem solid #fff;
   background-color: #fff;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   position: relative;
 }
 .form-payment__radio::after {
   content: "";
   display: inline-block;
   position: absolute;
-  height: 9px;
-  width: 9px;
+  height: 0.5625rem;
+  width: 0.5625rem;
   border-radius: 50%;
   background-color: #365a49;
   top: 50%;
@@ -636,23 +639,23 @@
 }
 .form-payment__checkbox {
   display: inline;
-  height: 18px;
-  width: 18px;
+  height: 1.125rem;
+  width: 1.125rem;
   background-color: #fff;
   position: relative;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .form-payment__checkbox::after {
   content: "";
   display: inline-flex;
   position: absolute;
-  width: 4px;
-  height: 7px;
+  width: 0.25rem;
+  height: 0.4375rem;
   border: solid #365a49;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.1875rem 0.1875rem 0;
   top: 0;
   left: 0;
-  bottom: 2px;
+  bottom: 0.125rem;
   right: 0;
   margin: auto;
   transform: rotate(45deg);
@@ -663,8 +666,8 @@
 }
 
 .form-btn {
-  width: 460px;
-  margin-top: 40px;
+  width: 28.75rem;
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -673,28 +676,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 58px;
-  width: 156px;
+  height: 3.625rem;
+  width: 9.75rem;
   border-radius: 30px;
   border: 1px solid #365a49;
   background-color: #365a49;
   color: #fff;
   text-transform: uppercase;
   font-family: AlegreyaSans-ExtraBold;
-  font-size: 19px;
+  font-size: 1.1875rem;
   align-self: flex-end;
   justify-self: flex-end;
   transition: 0.5s;
 }
 .form-order:hover {
   transition: 0.5s;
-  border: 1px solid #fff;
+  border: 0.0625rem solid #fff;
   background-color: #fff;
   color: #365a49;
 }
 
 .form-clear {
-  margin-left: 30px;
+  margin-left: 1.85rem;
   color: #000;
 }
 .form-clear:hover {

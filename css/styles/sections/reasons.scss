@@ -8,33 +8,34 @@
   &::before {
     content: "";
     display: block;
-    height: 315px;
-    width: 161px;
+    height: 19.6875rem;
+    width: 10.0624rem;
     position: absolute;
     background-image: url(../../image/reasons/beery_bg.png);
+    background-size: auto;
     top: 80%;
     left: 0;
     z-index: 1;
   }
 }
 .reasons-container {
-  padding: 0 80px 0;
+  padding: 0 5rem 0;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 .reasons-title {
-  width: 410px;
+  width: 25.625rem;
   &__inner {
-    margin-top: 110px;
+    margin-top: 6.875rem;
     @include title;
   }
 }
 
 .subtitle-reasons {
   font-family: AlegreyaSans-Thin;
-  font-size: 18px;
-  margin: 25px 0 60px;
+  font-size: 1.125rem;
+  margin: 1.15625rem 0 3.75rem;
   color: #666666;
 }
 .reasons-content {
@@ -44,7 +45,7 @@
   width: 100%;
 }
 .reasons-list {
-  width: 280px;
+  width: 17.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,14 +55,14 @@
 
   &::after {
     content: "";
-    height: 21px;
-    width: 67px;
+    height: 1.3125rem;
+    width: 4.1875rem;
     display: block;
     
     position: absolute;
     background-image: url(../../image/reasons/list-bg.png);
     top: 15%;
-    left: 17em;
+    left: 17rem;
     
     
   }
@@ -73,8 +74,8 @@
 
 
   &__icon {
-    width: 125px;
-    height: 125px;
+    width: 7.8125rem;
+    height: 7.8125rem;
     display: block;
     
     @each $icon-reasons in (heplful, tasty, nutri) {
@@ -88,15 +89,15 @@
 
   &__title {
     font-family: AlegreyaSans-Bold;
-    font-size: 27px;
+    font-size: 1.6875rem;
     color: #000;
     
-    margin: 35px 0 30px 0;
+    margin: 2.1875rem 0 1.875rem 0;
   }
 
   &__text {
     font-family: AlegreyaSans-Regular;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #666666;
   }
 }

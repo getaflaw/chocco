@@ -6,8 +6,8 @@
   &::before {
     content: "";
     display: block;
-    height: 321px;
-    width: 150px;
+    height: 20.0625rem;
+    width: 9.375rem;
     position: absolute;
     background-image: url(../../image/reviews/beery-bl.png),
       url(../../image/reviews/reviews-bg.png);
@@ -18,16 +18,16 @@
   }
 }
 .reviews-container {
-  padding: 66px 80px;
+  padding: 4.125rem 5rem;
   align-items: center;
   justify-content: center;
 }
 .reviews-title {
   @include title;
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 .reviews-content {
-  padding: 51px 45px 34px;
+  padding: 3.125rem 2.75rem 2.125rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -38,33 +38,33 @@
   width: 100%;
 }
 .reviews-text {
-  margin-left: 18px;
+  margin-left: 1.125rem;
   text-align: left;
-  width: 440px;
+  width: 27.5rem;
   &__title {
     font-family: AlegreyaSans-Bold;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   &__inner {
     font-family: AlegreyaSans-Regular;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #666666;
   }
 
   &__author {
       font-family: AlegreyaSans-Medium;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 .reviews-list {
    display: flex;
-   margin-top: 25px;
+   margin-top: 1.5625rem;
     &__users {
-        width: 67px;
-        height: 67px;
+        width: 4.1875rem;
+        height: 4.1875rem;
         display: block;
-        margin-right: 11px;
+        margin-right: 0.6875rem;
         &:last-child {
             margin-right: 0;
         }
@@ -72,8 +72,8 @@
             &_#{$icon-rewiews} {
               background-image: url(../../image/reviews/#{$icon-rewiews}.png);
               background-size: cover;
-              border: 1px solid #fff;
-              border-radius: 100px;
+              border: 0.0625rem solid #fff;
+              border-radius: 50%;
             }
           }
     }
