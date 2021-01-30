@@ -1,5 +1,5 @@
 .reviews-bg {
-  background-image: url(/image/reviews/berry-tl.png);
+  background-image: url(../../image/reviews/berry-tl.png);
   background-position: 98% 4%;
   background-repeat: no-repeat;
   position: relative;
@@ -9,8 +9,8 @@
     height: 321px;
     width: 150px;
     position: absolute;
-    background-image: url(/image/reviews/beery-bl.png),
-      url(/image/reviews/reviews-bg.png);
+    background-image: url(../../image/reviews/beery-bl.png),
+      url(../../image/reviews/reviews-bg.png);
     background-repeat: no-repeat;
     background-position: 50% 50%, left;
     top: 73%;
@@ -32,7 +32,7 @@
   justify-content: flex-start;
   align-items: center;
   background-color: #f8faf9;
-  background-image: url(/image/reviews/reviews-inner-bg.png);
+  background-image: url(../../image/reviews/reviews-inner-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
   width: 100%;
@@ -70,7 +70,7 @@
         }
         @each $icon-rewiews in (user1, user2, user3) {
             &_#{$icon-rewiews} {
-              background-image: url(/image/reviews/#{$icon-rewiews}.png);
+              background-image: url(../../image/reviews/#{$icon-rewiews}.png);
               background-size: cover;
               border: 1px solid #fff;
               border-radius: 100px;
