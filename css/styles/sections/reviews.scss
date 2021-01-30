@@ -1,0 +1,80 @@
+.reviews-bg {
+  background-image: url(/image/reviews/berry-tl.png);
+  background-position: 98% 4%;
+  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    height: 321px;
+    width: 150px;
+    position: absolute;
+    background-image: url(/image/reviews/beery-bl.png),
+      url(/image/reviews/reviews-bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%, left;
+    top: 73%;
+    z-index: 1;
+  }
+}
+.reviews-container {
+  padding: 66px 80px;
+  align-items: center;
+  justify-content: center;
+}
+.reviews-title {
+  @include title;
+  margin-bottom: 44px;
+}
+.reviews-content {
+  padding: 51px 45px 34px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8faf9;
+  background-image: url(/image/reviews/reviews-inner-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+}
+.reviews-text {
+  margin-left: 18px;
+  text-align: left;
+  width: 440px;
+  &__title {
+    font-family: AlegreyaSans-Bold;
+    font-size: 30px;
+  }
+
+  &__inner {
+    font-family: AlegreyaSans-Regular;
+    font-size: 18px;
+    color: #666666;
+  }
+
+  &__author {
+      font-family: AlegreyaSans-Medium;
+    font-size: 18px;
+  }
+}
+.reviews-list {
+   display: flex;
+   margin-top: 25px;
+    &__users {
+        width: 67px;
+        height: 67px;
+        display: block;
+        margin-right: 11px;
+        &:last-child {
+            margin-right: 0;
+        }
+        @each $icon-rewiews in (user1, user2, user3) {
+            &_#{$icon-rewiews} {
+              background-image: url(/image/reviews/#{$icon-rewiews}.png);
+              background-size: cover;
+              border: 1px solid #fff;
+              border-radius: 100px;
+            }
+          }
+    }
+}

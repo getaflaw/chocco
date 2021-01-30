@@ -1,0 +1,102 @@
+.reasons-bg {
+  background-color: #fff;
+  background-image: url(/image/reasons/reasons_bg.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    height: 315px;
+    width: 161px;
+    position: absolute;
+    background-image: url(/image/reasons/beery_bg.png);
+    top: 80%;
+    left: 0;
+    z-index: 1;
+  }
+}
+.reasons-container {
+  padding: 0 80px 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.reasons-title {
+  width: 410px;
+  &__inner {
+    margin-top: 110px;
+    @include title;
+  }
+}
+
+.subtitle-reasons {
+  font-family: AlegreyaSans-Thin;
+  font-size: 18px;
+  margin: 25px 0 60px;
+  color: #666666;
+}
+.reasons-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.reasons-list {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 21px;
+    width: 67px;
+    display: block;
+    
+    position: absolute;
+    background-image: url(/image/reasons/list-bg.png);
+    top: 15%;
+    left: 17em;
+    
+    
+  }
+
+  &:last-child::after {
+    content: "";
+    display: none;
+  }
+
+
+  &__icon {
+    width: 125px;
+    height: 125px;
+    display: block;
+    
+    @each $icon-reasons in (heplful, tasty, nutri) {
+      &_#{$icon-reasons} {
+        background-image: url(/image/reasons/#{$icon-reasons}_icon.png);
+      }
+    }
+    
+    
+  }
+
+  &__title {
+    font-family: AlegreyaSans-Bold;
+    font-size: 27px;
+    color: #000;
+    
+    margin: 35px 0 30px 0;
+  }
+
+  &__text {
+    font-family: AlegreyaSans-Regular;
+    font-size: 18px;
+    color: #666666;
+  }
+}
