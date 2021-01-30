@@ -2,7 +2,7 @@
 {
     @font-face {
         font-family: #{$fonts};
-        src: url(/fonts/#{$fonts}.ttf);
+        src: url(./fonts/#{$fonts}.ttf);
     }
 }
 

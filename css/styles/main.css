@@ -1,58 +1,58 @@
 @font-face {
   font-family: AlegreyaSans-Black;
-  src: url(/fonts/AlegreyaSans-Black.ttf);
+  src: url(./fonts/AlegreyaSans-Black.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-BlackItalic;
-  src: url(/fonts/AlegreyaSans-BlackItalic.ttf);
+  src: url(./fonts/AlegreyaSans-BlackItalic.ttf);
 }
 @font-face {
   font-family: BoldItalic;
-  src: url(/fonts/BoldItalic.ttf);
+  src: url(./fonts/BoldItalic.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-Bold;
-  src: url(/fonts/AlegreyaSans-Bold.ttf);
+  src: url(./fonts/AlegreyaSans-Bold.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-ExtraBold;
-  src: url(/fonts/AlegreyaSans-ExtraBold.ttf);
+  src: url(./fonts/AlegreyaSans-ExtraBold.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-ExtraBoldItalic;
-  src: url(/fonts/AlegreyaSans-ExtraBoldItalic.ttf);
+  src: url(./fonts/AlegreyaSans-ExtraBoldItalic.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-Italic;
-  src: url(/fonts/AlegreyaSans-Italic.ttf);
+  src: url(./fonts/AlegreyaSans-Italic.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-Light;
-  src: url(/fonts/AlegreyaSans-Light.ttf);
+  src: url(./fonts/AlegreyaSans-Light.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-LightItalic;
-  src: url(/fonts/AlegreyaSans-LightItalic.ttf);
+  src: url(./fonts/AlegreyaSans-LightItalic.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-Medium;
-  src: url(/fonts/AlegreyaSans-Medium.ttf);
+  src: url(./fonts/AlegreyaSans-Medium.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-MediumItalic;
-  src: url(/fonts/AlegreyaSans-MediumItalic.ttf);
+  src: url(./fonts/AlegreyaSans-MediumItalic.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-Regular;
-  src: url(/fonts/AlegreyaSans-Regular.ttf);
+  src: url(./fonts/AlegreyaSans-Regular.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-Thin;
-  src: url(/fonts/AlegreyaSans-Thin.ttf);
+  src: url(./fonts/AlegreyaSans-Thin.ttf);
 }
 @font-face {
   font-family: AlegreyaSans-ThinItalic;
-  src: url(/fonts/AlegreyaSans-ThinItalic.ttf);
+  src: url(./fonts/AlegreyaSans-ThinItalic.ttf);
 }
 .section {
   width: 100vw;
@@ -519,7 +519,7 @@
 }
 
 .delivery-bg {
-  background-image: url(/image/delivery/berry-bg.png), url(/image/delivery/laef-bg.png), url(/image/delivery/image-bg.png);
+  background-image: url(./image/delivery/berry-bg.png), url(./image/delivery/laef-bg.png), url(./image/delivery/image-bg.png);
   background-repeat: no-repeat;
   background-size: auto, auto, cover;
   background-position: 2% 90%, 99% 80%;
