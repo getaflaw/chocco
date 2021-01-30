@@ -1,6 +1,6 @@
 .intro-bg {
   background-color: #86c3d7;
-  background-image: url(../../image/intro/intro_bg.png);
+  background-image: url(image/intro/intro_bg.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -11,7 +11,7 @@
     height: 112px;
     width: 59px;
     position: absolute;
-    background-image: url(../../image/intro/leaf-l_bg.png);
+    background-image: url(image/intro/leaf-l_bg.png);
     top: 92%;
     left: 2%;
     z-index: 1;
@@ -23,7 +23,7 @@
     height: 108px;
     width: 111px;
     position: absolute;
-    background-image: url(../../image/intro/beery-r_bg.png);
+    background-image: url(image/intro/beery-r_bg.png);
     top: 93%;
     right: 8%;
     z-index: 1;
@@ -41,7 +41,7 @@
     height: 105px;
     width: 141px;
     position: absolute;
-    background-image: url(../../image/intro/leaf-m_bg.png);
+    background-image: url(image/intro/leaf-m_bg.png);
     top: 92%;
     right: 26%;
     z-index: 1;
@@ -52,7 +52,7 @@
     height: 203px;
     width: 236px;
     position: absolute;
-    background-image: url(../../image/intro/leaf-r_bg.png);
+    background-image: url(image/intro/leaf-r_bg.png);
     top: 55%;
     right: 2%;
   }
@@ -68,7 +68,7 @@
 .logo {
   width: 53px;
   height: 39px;
-  background-image: url(../../image/intro/logo.png);
+  background-image: url(image/intro/logo.png);
 }
 .nav {
   width: 65%;
@@ -96,7 +96,7 @@
     display: inline-block;
     width: 12px;
     height: 11px;
-    background-image: url(../../image/intro/phone.png);
+    background-image: url(image/intro/phone.png);
     margin-right: 5px;
   }
   &__number {
