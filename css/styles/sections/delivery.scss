@@ -7,7 +7,6 @@
 }
 
 .delivery-container {
-  padding: 5.375rem 5rem 5.625rem;
   align-items: center;
   justify-content: center;
 }
@@ -28,6 +27,7 @@
   text-align: left;
   color: #365a49;
   line-height: 1.875rem;
+  
   & input:focus {
    outline: 0.125rem solid #365a49;
   }
@@ -36,31 +36,51 @@
    }
 }
 .form-left {
-  width: 28.75rem;
+  width: 49%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: 0.5rem;
+  
   & input {
     border: none;
     padding: 1.0625rem 0.6875rem;
     margin-bottom: 1.25rem;
     color: #000;
     &[type="name"] {
-      width: 13.75rem;
+      width: 100%;
     }
     &[type="number"] {
-      width: 13.75rem;
+      width: 100%;
     }
     &[type="streat"] {
-      width: 28.75rem;
+      width: 100%;
     }
     &[type="address"] {
-      width: 6.25rem;
+      width: 100%;
     }
   }
 }
+.form-name {
+  max-width: 220px;
+  width: 100%;
+  flex-basis:48%
+}
+.form-number {
+  max-width: 220px;
+  width: 100%;
+  flex-basis:48%
+}
+.form-streat {
+  max-width: 460px;
+  width: 100%;
+  flex-basis:100%
+}
+@each $form in (house, corps, door, float) {
+  .form-#{$form} { max-width: 100px;width: 100%;flex-basis:23%}
+}
 .form-right {
-  width: 28.75rem;
+  width: 49%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -69,12 +89,18 @@
     padding: 1.0625rem 0.6875rem;
     margin-bottom: 1.25rem;
     color: #000;
-    width: 28.75rem;
+    width: 98%;
     height: 11.25rem;
+    
   }
   & input {
     display: none;
   }
+}
+.form-comments {
+  flex-basis: 100%;
+  width: 98%;
+  max-width: 28.75rem;
 }
 .form-payment {
     padding: 0.3125rem;
