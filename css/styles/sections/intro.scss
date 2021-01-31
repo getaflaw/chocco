@@ -32,7 +32,7 @@
 }
 
 .intro-container {
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   justify-content: space-between;
   position: relative;
@@ -230,7 +230,7 @@
     }
   }
   .intro-container {
-    padding: 1.5rem 3.4rem;
+    padding: 0.4rem;
     &::before {
       display: none;
     }
@@ -293,7 +293,7 @@
     background-image: none;
   }
   .intro-container {
-    padding: 0 1.5rem;
+    padding: 0.5rem 0;
     &::after {
       content: "";
       background-image: url(/image/intro/intro-bg-768.png);

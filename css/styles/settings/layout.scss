@@ -19,3 +19,11 @@
   flex-direction: column;
 }
 
+@media (max-width: 768px) 
+{
+  .container {max-width: 768px;}
+}
+@media (max-width: 460px) 
+{
+  .container {max-width: 460px;}
+}
