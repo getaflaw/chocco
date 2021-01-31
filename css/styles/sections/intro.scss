@@ -75,12 +75,20 @@
   background-repeat: no-repeat;
 }
 .nav {
+  
   width: 65%;
   font-size: 1.125rem;
+  
   &__list {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__items {
+    margin-right: 0.7rem;
+    &:last-child {margin-right: 0;}
   }
   &__link {
     color: #fff;
@@ -96,6 +104,7 @@
 .contacts {
   display: flex;
   align-items: center;
+  height: 39px;
   &__icon {
     display: inline-block;
     width: 0.75rem;

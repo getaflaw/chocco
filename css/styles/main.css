@@ -168,7 +168,15 @@
 .nav__list {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.nav__items {
+  margin-right: 0.7rem;
+}
+.nav__items:last-child {
+  margin-right: 0;
 }
 .nav__link {
   color: #fff;
@@ -184,6 +192,7 @@
 .contacts {
   display: flex;
   align-items: center;
+  height: 39px;
 }
 .contacts__icon {
   display: inline-block;
@@ -555,6 +564,8 @@
 }
 .reasons-list {
   width: 17.5rem;
+  height: 100%;
+  max-height: 20rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -569,8 +580,8 @@
   display: block;
   position: absolute;
   background-image: url(../../image/reasons/list-bg.png);
-  top: 15%;
-  left: 87%;
+  top: 17%;
+  left: 83%;
 }
 .reasons-list:last-child::after {
   content: "";
