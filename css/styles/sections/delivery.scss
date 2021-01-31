@@ -6,6 +6,11 @@
   background-position: 2% 90%, 99% 80%;
 }
 
+@media (max-width: 768px) {
+  .delivery-bg { background-image: url(../../image/delivery/image-bg.png);
+    background-size: cover;}
+
+}
 .delivery-container {
   align-items: center;
   justify-content: center;
@@ -15,14 +20,16 @@
   color: #365a49;
   @include title;
   margin-bottom: 3.125rem;
+  text-align: center;
 }
+@media (max-width: 460px) { .delivery-title {font-size: 2.5rem;}}
 
 .delivery-form {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   font-family: AlegreyaSans-Regular;
-  width: 100%;
+  width: 98%;
   font-size: 1.125rem;
   text-align: left;
   color: #365a49;
@@ -35,12 +42,23 @@
     outline: 0.125rem solid #365a49;
    }
 }
+
+@media (max-width: 768px) {
+  .delivery-title {
+    margin-bottom: 2.5rem;
+  }
+  .delivery-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .form-left {
   width: 49%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 0.5rem;
+
   
   & input {
     border: none;
@@ -79,17 +97,26 @@
 @each $form in (house, corps, door, float) {
   .form-#{$form} { max-width: 100px;width: 100%;flex-basis:23%}
 }
+
+@media (max-width: 768px) {
+  .form-left input {
+    padding: 0.8125rem 0.6875rem 0.625rem;
+    font-size: 14px;
+    height: 35px;
+    margin-bottom: 0;
+  }
+}
+
 .form-right {
   width: 49%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   & textarea {
     border: none;
     padding: 1.0625rem 0.6875rem;
     margin-bottom: 1.25rem;
     color: #000;
-    width: 98%;
+    width: 100%;
     height: 11.25rem;
     
   }
@@ -165,6 +192,7 @@
     opacity: 1;
   }
 }
+
 .form-btn {
   width: 28.75rem;
   margin-top: 1.5rem;
@@ -189,4 +217,26 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+@media (max-width: 768px) {
+  .form-comments textarea {
+    height: 5rem;
+  }
+  .form-left {
+    width: 98%;
+    max-width: 28.75rem;
+  }
+  .form-right {
+    width: 98%;
+    max-width: 28.75rem;
+  }
+  .form-btn {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .form-right { 
+    justify-content: center;
+}
 }
