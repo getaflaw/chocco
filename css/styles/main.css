@@ -55,20 +55,20 @@
   src: url(../../fonts/AlegreyaSans-ThinItalic.ttf);
 }
 .wrapper {
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  overflow: hidden;
 }
 
 .section {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 68.75rem;
+  max-width: 58.75rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,6 +81,7 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   position: relative;
+  padding: 0 0.5rem;
 }
 .intro-bg::before {
   content: "";
@@ -90,7 +91,7 @@
   position: absolute;
   background-image: url(../../image/intro/leaf-l_bg.png);
   top: 92%;
-  left: 2%;
+  left: 4%;
   z-index: 1;
 }
 .intro-bg::after {
@@ -106,7 +107,7 @@
 }
 
 .intro-container {
-  padding: 1.5rem 5rem 0;
+  padding: 0 1rem;
   height: 100%;
   justify-content: space-between;
   position: relative;
@@ -139,6 +140,7 @@
   align-items: center;
   color: #fff;
   font-family: AlegreyaSans-Regular;
+  margin-top: 1rem;
 }
 
 .logo {
@@ -407,7 +409,7 @@
   }
 
   .intro-container {
-    padding: 1.5rem;
+    padding: 0 1.5rem;
   }
   .intro-container::after {
     content: "";
@@ -450,6 +452,10 @@
   .intro-subtitle {
     font-size: 1.125rem;
   }
+
+  .intro-title {
+    margin-bottom: 5rem;
+  }
 }
 .reasons-bg {
   background-color: #fff;
@@ -469,9 +475,22 @@
   background-size: auto;
   top: 80%;
   left: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
+@media (max-width: 768px) {
+  .reasons-bg {
+    background-position: left 20%;
+  }
+}
+@media (max-width: 480px) {
+  .reasons-bg {
+    background-image: none;
+  }
+  .reasons-bg::before {
+    display: none;
+  }
+}
 .reasons-container {
   padding: 0 5rem 0;
   text-align: center;
@@ -479,15 +498,21 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .reasons-container {
+    padding: 0 1rem 0;
+  }
+}
 .reasons-title {
-  width: 25.625rem;
+  max-width: 25.625rem;
+  width: 100%;
 }
 .reasons-title__inner {
-  margin-top: 6.875rem;
   font-family: AlegreyaSans-Bold;
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
 }
 
 .subtitle-reasons {
@@ -497,6 +522,15 @@
   color: #666666;
 }
 
+@media (max-width: 480px) {
+  .reasons-title__inner {
+    font-size: 40px;
+  }
+
+  .subtitle-reasons {
+    margin-bottom: 2.5rem;
+  }
+}
 .reasons-content {
   display: flex;
   justify-content: space-between;
@@ -504,11 +538,16 @@
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .reasons-content {
+    flex-direction: column;
+  }
+}
 .reasons-list {
   width: 17.5rem;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
@@ -521,7 +560,7 @@
   position: absolute;
   background-image: url(../../image/reasons/list-bg.png);
   top: 15%;
-  left: 17rem;
+  left: 87%;
 }
 .reasons-list:last-child::after {
   content: "";
@@ -545,14 +584,47 @@
   font-family: AlegreyaSans-Bold;
   font-size: 1.6875rem;
   color: #000;
+  width: 100%;
   margin: 2.1875rem 0 1.875rem 0;
 }
 .reasons-list__text {
-  font-family: AlegreyaSans-Regular;
+  font-family: AlegreyaSans-Light;
   font-size: 1.125rem;
   color: #666666;
 }
 
+@media (max-width: 768px) {
+  .reasons-list {
+    width: calc(100%/3 -20px);
+  }
+  .reasons-list::after {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .reasons-content {
+    flex-direction: column;
+  }
+
+  .reasons-list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
+    text-align: left;
+  }
+  .reasons-list__icon {
+    width: 100%;
+    max-width: 7.8125rem;
+    margin-right: 0.5rem;
+  }
+  .reasons-list__block {
+    width: 19rem;
+  }
+  .reasons-list__title {
+    margin: 0;
+  }
+}
 .reviews-bg {
   background-image: url(../../image/reviews/berry-tl.png);
   background-position: 98% 4%;
