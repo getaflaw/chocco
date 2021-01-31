@@ -18,7 +18,6 @@
   }
 }
 .reviews-container {
-  padding: 4.125rem 5rem;
   align-items: center;
   justify-content: center;
 }
@@ -35,7 +34,8 @@
   background-image: url(../../image/reviews/reviews-inner-bg.png);
   background-repeat: no-repeat;
   background-position: top right;
-  width: 100%;
+  width: 98%;
+  max-width: 940px;
 }
 .reviews-text {
   margin-left: 1.125rem;
@@ -50,31 +50,57 @@
     font-family: AlegreyaSans-Regular;
     font-size: 1.125rem;
     color: #666666;
+    margin: 1rem 0;
+    width: 100%;
   }
 
   &__author {
-      font-family: AlegreyaSans-Medium;
+    font-family: AlegreyaSans-Medium;
     font-size: 1.125rem;
   }
 }
-.reviews-list {
-   display: flex;
-   margin-top: 1.5625rem;
-    &__users {
-        width: 4.1875rem;
-        height: 4.1875rem;
-        display: block;
-        margin-right: 0.6875rem;
-        &:last-child {
-            margin-right: 0;
-        }
-        @each $icon-rewiews in (user1, user2, user3) {
-            &_#{$icon-rewiews} {
-              background-image: url(../../image/reviews/#{$icon-rewiews}.png);
-              background-size: cover;
-              border: 0.0625rem solid #fff;
-              border-radius: 50%;
-            }
-          }
+@media (max-width: 768px) {
+  .reviews-content {
+    padding: 2.8rem 1.5rem 2rem;
+    flex-direction: column;
+    max-width: 45rem;
+    &__img {
+      width: 100%;
+      max-width: 8.125rem;
     }
+  }
+  .reviews-text {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 460px) {
+  .reviews-content {
+    max-width: 28.75rem;
+    &__img {
+      max-width: 7.56rem;
+    }
+  }
+}
+.reviews-list {
+  display: flex;
+  margin-top: 1.5625rem;
+  &__users {
+    width: 4.1875rem;
+    height: 4.1875rem;
+    display: block;
+    margin-right: 0.6875rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    @each $icon-rewiews in (user1, user2, user3) {
+      &_#{$icon-rewiews} {
+        background-image: url(../../image/reviews/#{$icon-rewiews}.png);
+        background-size: cover;
+        border: 0.0625rem solid #fff;
+        border-radius: 50%;
+      }
+    }
+  }
 }
