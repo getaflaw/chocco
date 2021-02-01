@@ -1052,3 +1052,59 @@
     justify-content: center;
   }
 }
+.maps-bg {
+  background-image: url(/image/maps/maps.png);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.footer {
+  padding: 0 5rem;
+  position: absolute;
+  width: 100%;
+  height: 5.8125rem;
+  background-color: #ffffff;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  font-family: AlegreyaSans-Regular;
+  font-size: 21px;
+}
+.footer-contact__address {
+  line-height: 1.14;
+}
+.footer-contact__number {
+  color: #365a49;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-social__items {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 1.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .footer {
+    height: 9.5625rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer-contact {
+    align-items: center;
+  }
+}
