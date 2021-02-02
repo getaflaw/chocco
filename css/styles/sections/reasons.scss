@@ -84,10 +84,9 @@
 
 .reasons-list {
   width: 17.5rem;
-  height: 100%;
-  max-height: 20rem;
+  
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -113,13 +112,8 @@
   &__icon {
     width: 7.8125rem;
     height: 7.8125rem;
-    display: block;
-
-    @each $icon-reasons in (heplful, tasty, nutri) {
-      &_#{$icon-reasons} {
-        background-image: url(../../image/reasons/#{$icon-reasons}_icon.png);
-      }
-    }
+    fill: #2e2e2d;
+    background-image: url(/image/reasons/elips.png);
   }
 
   &__title {
