@@ -217,15 +217,8 @@
     display: inline-block;
     height: 3.125rem;
     width: 3.125rem;
-    @each $icon-intro in (nature, dilivery, diet) {
-      &_#{$icon-intro} {
-        background-image: url(../../image/intro/#{$icon-intro}_icon.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-right: 0.4375rem;
-      }
-    }
+    margin-right: 0.5rem;
+    fill: #fff;
   }
 }
 

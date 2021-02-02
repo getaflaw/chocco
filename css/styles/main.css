@@ -325,27 +325,8 @@
   display: inline-block;
   height: 3.125rem;
   width: 3.125rem;
-}
-.intro-discriptions__icon_nature {
-  background-image: url(../../image/intro/nature_icon.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 0.4375rem;
-}
-.intro-discriptions__icon_dilivery {
-  background-image: url(../../image/intro/dilivery_icon.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 0.4375rem;
-}
-.intro-discriptions__icon_diet {
-  background-image: url(../../image/intro/diet_icon.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 0.4375rem;
+  margin-right: 0.5rem;
+  fill: #fff;
 }
 
 @media (max-width: 768px) {
