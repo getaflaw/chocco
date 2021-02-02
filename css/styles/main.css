@@ -193,17 +193,17 @@
   display: flex;
   align-items: center;
   height: 39px;
+  fill: #fff;
 }
 .contacts__icon {
   display: inline-block;
   width: 0.75rem;
   height: 0.6875rem;
-  fill: #fff;
-  margin-right: 0.3125rem;
 }
 .contacts__number {
   font-size: 1.5rem;
   text-transform: uppercase;
+  margin-left: 0.3125rem;
 }
 
 .fixed-menu {
@@ -1053,14 +1053,24 @@
 }
 .footer-contact__number {
   color: #365a49;
+  fill: #365a49;
 }
 
+.footer-social {
+  width: 8rem;
+}
 .footer-social__list {
   display: flex;
   justify-content: space-between;
 }
 .footer-social__items {
-  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #ccc;
+}
+.footer-social__items:hover {
+  background-color: #ffffff;
+  fill: black;
 }
 
 @media (max-width: 768px) {
@@ -1077,5 +1087,8 @@
 
   .footer-contact {
     align-items: center;
+  }
+  .footer-contact__number {
+    margin-top: 1rem;
   }
 }
