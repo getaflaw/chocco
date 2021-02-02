@@ -17,7 +17,7 @@
 }
 
 .delivery-title {
-  color: #365a49;
+  color: $base-color;
   @include title;
   margin-bottom: 3.125rem;
   text-align: center;
@@ -29,17 +29,17 @@
   align-items: flex-start;
   justify-content: space-between;
   font-family: AlegreyaSans-Regular;
-  width: 98%;
+  width: 96%;
   font-size: 1.125rem;
   text-align: left;
-  color: #365a49;
+  color: $base-color;
   line-height: 1.875rem;
   
   & input:focus {
-   outline: 0.125rem solid #365a49;
+   outline: 0.125rem solid $base-color;
   }
   & textarea:focus {
-    outline: 0.125rem solid #365a49;
+    outline: 0.125rem solid $base-color;
    }
 }
 
@@ -50,6 +50,7 @@
   .delivery-form {
     flex-direction: column;
     align-items: center;
+
   }
 }
 
@@ -151,7 +152,7 @@
         height: 0.5625rem;
         width: 0.5625rem;
         border-radius: 50%;
-        background-color: #365a49;
+        background-color: $base-color;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -180,7 +181,7 @@
       position: absolute;
       width: 0.25rem;
       height: 0.4375rem;
-      border: solid #365a49;
+      border: solid $base-color;
       border-width: 0 0.1875rem 0.1875rem 0;
       top: 0; left: 0; bottom: 0.125rem; right: 0;
       margin: auto;
@@ -200,7 +201,7 @@
   align-items: center
 }
 .form-order {
-  @include btn(#365a49, #365a49, #fff);
+  @include btn($base-color, $base-color, #fff);
   align-self: flex-end;
   justify-self: flex-end;
   transition: 0.5s;
@@ -208,7 +209,7 @@
     transition: 0.5s;
     border: 0.0625rem solid #fff;   
     background-color: #fff;
-    color: #365a49;
+    color: $base-color;
   }
 }
 .form-clear {

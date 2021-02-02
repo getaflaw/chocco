@@ -94,8 +94,8 @@
     color: #fff;
     transition: 0.5s;
     &:hover {
-      text-decoration: underline #365a49;
-      color: #365a49;
+      text-decoration: underline $base-color;
+      color: $base-color;
       transition: 0.5s;
     }
   }
@@ -109,7 +109,7 @@
     display: inline-block;
     width: 0.75rem;
     height: 0.6875rem;
-    background-image: url(../../image/intro/phone.png);
+    fill:#fff;
     margin-right: 0.3125rem;
   }
   &__number {
@@ -189,8 +189,8 @@
   transition: 0.5s;
   &:hover {
     transition: 0.5s;
-    border: 1px solid #365a49;
-    background-color: #365a49;
+    border: 1px solid $base-color;
+    background-color: $base-color;
     color: #fff;
   }
 }
