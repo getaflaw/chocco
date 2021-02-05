@@ -944,17 +944,25 @@
   content: "";
   display: inline-flex;
   position: absolute;
+  width: 11px;
+  height: 9px;
+  background-image: url(/icons/sprite.svg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  fill: #365a49;
+  /*
+
   width: 0.25rem;
   height: 0.4375rem;
-  border: solid #365a49;
+  border: solid $base-color;
   border-width: 0 0.1875rem 0.1875rem 0;
-  top: 0;
-  left: 0;
-  bottom: 0.125rem;
-  right: 0;
+  top: 0; left: 0; bottom: 0.125rem; right: 0;
   margin: auto;
   transform: rotate(45deg);
   opacity: 0;
+  */
 }
 .form-payment input[type=checkbox]:checked + .form-payment__checkbox::after {
   opacity: 1;
