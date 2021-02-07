@@ -44,6 +44,22 @@
               </svg>
               <span class="contacts__number">8 800 903 90 90</span>
             </div>
+            <div id="hamburger-menu">
+              <input id="menu__toogle" type="checkbox">
+              <label for="menu__toogle" class="menu__btn">
+                <span class="menu__icon"></span>
+              </label>
+              <ul class="menu__box">
+                <li><a class="menu__item" href="#">О нас</a></li>
+                <li><a class="menu__item" href="#">Батончики</a></li>
+                <li><a class="menu__item" href="#">Команда</a></li>
+                <li><a class="menu__item" href="#">Меню</a></li>
+                <li><a class="menu__item" href="#">Отзывы</a></li>
+                <li><a class="menu__item" href="#">Как мы работаем</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
+              </ul>
+              
+            </div>
           </header>
           <ul class="fixed-menu">
             <li class="fixed-menu__items"></li>
@@ -86,7 +102,7 @@
             </li>
             <li class="intro-discriptions__item">
               <svg class="intro-discriptions__icon">
-                <use xlink:href="/icons/sprite.svg#dilivery"></use>
+                <use xlink:href="icons/sprite.svg#dilivery"></use>
               </svg>
               <span class="intro-discriptions__text">
                 3-5 дней доставка по РФ
@@ -94,7 +110,7 @@
             </li>
             <li class="intro-discriptions__item">
               <svg class="intro-discriptions__icon">
-                <use xlink:href="/icons/sprite.svg#diet"></use>
+                <use xlink:href="icons/sprite.svg#diet"></use>
               </svg>
               <span class="intro-discriptions__text">
                 100% натуральный продукт
@@ -116,7 +132,7 @@
           <ul class="reasons-content">
             <li class="reasons-list">
               <svg class="reasons-list__icon">
-                <use x="30" xlink:href="/icons/sprite.svg#helpful"></use>
+                <use x="30" xlink:href="icons/sprite.svg#helpful"></use>
               </svg>
               <div class="reasons-list__block">
                 <h4 class="reasons-list__title">Полезно</h4>
@@ -128,7 +144,7 @@
             </li>
             <li class="reasons-list">
               <svg class="reasons-list__icon">
-                <use x="28" xlink:href="/icons/sprite.svg#tasty"></use>
+                <use x="28" xlink:href="icons/sprite.svg#tasty"></use>
               </svg>
               <div class="reasons-list__block">
                 <h4 class="reasons-list__title">Вкусно</h4>
@@ -140,7 +156,7 @@
             </li>
             <li class="reasons-list">
               <svg class="reasons-list__icon">
-                <use x="28" xlink:href="/icons/sprite.svg#nutri"></use>
+                <use x="28" xlink:href="icons/sprite.svg#nutri"></use>
               </svg>
               <div class="reasons-list__block">
                 <h4 class="reasons-list__title">Питательно</h4>
@@ -153,8 +169,13 @@
           </ul>
         </section>
       </div>
-      <div class="section reviews-bg">
-        <section class="container reviews-container">
+      <section class="section">
+        <div class="container">
+          
+        </div>
+      </section>
+      <section class="section reviews-bg">
+        <div class="container reviews-container">
           <h2 class="reviews-title">Отзывы</h2>
           <div class="reviews-content">
             <div class="reviews-content__img">
@@ -176,8 +197,8 @@
             <li class="reviews-list__users reviews-list__users_user2"></li>
             <li class="reviews-list__users reviews-list__users_user3"></li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="section delivery-bg">
         <div class="container delivery-container">
           <h2 class="delivery-title">закажите доставку</h2>
@@ -256,7 +277,7 @@
               <span class="footer-contact__address">Москва, ул.Новый Арбат, д.31/12</span>
               <span class="footer-contact__number">
                 <svg class="contacts__icon">
-                <use xlink:href="/icons/sprite.svg#phone-icon"></use>
+                <use xlink:href="icons/sprite.svg#phone-icon"></use>
                 </svg>
               8 800 903 90 90</span>
             </div>
@@ -265,28 +286,28 @@
                 <li>
                   <a href="#">
                     <svg class="footer-social__items">
-                      <use xlink:href="/icons/sprite.svg#vk-icon"></use>
+                      <use xlink:href="icons/sprite.svg#vk-icon"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <svg class="footer-social__items">
-                      <use xlink:href="/icons/sprite.svg#fb-icon"></use>
+                      <use xlink:href="icons/sprite.svg#fb-icon"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="">
                     <svg class="footer-social__items">
-                      <use xlink:href="/icons/sprite.svg#inst-icon"></use>
+                      <use xlink:href="icons/sprite.svg#inst-icon"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <svg class="footer-social__items">
-                      <use xlink:href="/icons/sprite.svg#tw-icon"></use>
+                      <use xlink:href="icons/sprite.svg#tw-icon"></use>
                     </svg>
                   </a>
                 </li>
@@ -296,5 +317,6 @@
         </div>
       </section>
     </div>
+    <script src="/javascript/burger-menu.js"></script>
   </body>
 </html>
