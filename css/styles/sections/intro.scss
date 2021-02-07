@@ -173,7 +173,7 @@
     }
   }
   &__btn {
-    position: fixed;
+    position: absolute;
     width: 24px;
     height: 24px;
   }
@@ -205,8 +205,8 @@
 }
 
 .fixed-menu {
-  position: absolute;
-  right: 0%;
+  position: fixed;
+  right: 2%;
   top: 30%;
   z-index: 2;
   &__items {

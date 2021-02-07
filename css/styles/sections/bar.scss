@@ -12,17 +12,62 @@
         background-image: url(/image/bar/berry.png), url(/image/bar/bg-image.png);
         background-repeat: no-repeat;
         background-position: center,right;
+        z-index: 0;
     }
 }
 .container-bar {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    
+}
+.bar-arrowleft {
+    display: block;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-top: 2px solid #151515;
+    border-left: 2px solid #151515;
+    transform: rotate(-45deg);
+    border-radius: 8px 0 0 0;
+    margin: 0 1rem;
+    z-index: 7;
+}
+.bar-arrowright {
+    display: block;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-top: 2px solid #151515;
+    border-left: 2px solid #151515;
+    transform: rotate(135deg);
+    border-radius: 8px 0 0 0;
+    margin: 0 1rem;
+    z-index: 7;
 }
 .bars-img {
-    width: 50%;
+    width: 363px;
     margin-right: 1rem;
+    z-index: 5;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 84%;
+        width: 127%;
+        top: 15%;
+        left: -20%;
+        background-image: url(/image/bar/leaf-l.png), url(/image/bar/leaf-r.png);
+        background-repeat: no-repeat;
+        background-position: left top, right bottom;
+        z-index: 3;
+    }
+    
 }
+
 .bar-descriptions {
     width: 344px;
     display: flex;
@@ -33,6 +78,7 @@
     font-size: AlegreyaSans-Regular;
     font-size: 18px;
     height: 455px;
+    z-index: 1;
     &__composition {
         width: 90px;
         height: 90px;
@@ -63,29 +109,89 @@
     &__propetties {
         display: flex;
         width: inherit;
-        justify-content: space-between;
+        margin-top: 0.5rem;
+        
     }
     &__order {
         display: flex;
         justify-content: space-evenly;
         width: inherit;
         align-items: center;
+        margin-top: 0.5rem;
     }
     &__price {
         font-family: AlegreyaSans-Light;
         font-size: 60px;
         color: #151515;
+        margin-right: 1rem;
+    }
+    &__calories {
+        margin-right: 55px
+    }
+    &__btn {
+        @include btn($base-color, $base-color, #fff);
     }
 }
 
-.bar-descriptions
-.bar-descriptions
-.bar-descriptions__calories {
-    width: 50%;
+
+@media (max-width:768px) {
+    .container-bar {
+        flex-direction: column;
+        justify-content: center;
+        &::before {
+            display: none;    
+            }
+        &::after {
+            display: none;    
+        }
+    }
+    .bar-descriptions {
+        width: 100%;
+        max-width: 498px;
+        height: 250px;
+        align-items: center;
+        text-align: center;
+        &__composition {
+            display: none;
+        }
+        &__propetties {
+            justify-content: center;
+            text-align: left;
+        }
+    }
+    .bar-arrowright {
+        position: absolute;
+        top: 32%;
+        right: 12%;
+    }
+    .bar-arrowleft {
+        position: absolute;
+        top: 32%;
+        left: 12%;
+    }
+    .bars-img {
+        width: 37%;
+        height: 40%;
+        min-width: 262px;
+    }
 }
-.bar-descriptions__weight {
-    width: 50%;
-}
-.bar-descriptions__btn {
-    @include btn($base-color, $base-color, #fff);
+
+
+@media (max-width:460px) {
+    .bars-img {
+        max-width: 262px;
+        width: 100%;
+    }
+    .bar-arrowright {
+        top: 28%;
+        right: 2%;
+    }
+    .bar-arrowleft {
+        top: 28%;
+        left: 2%;
+    }
+    .bar-descriptions {
+        max-width: 370px;
+        height: 300px;
+    }
 }

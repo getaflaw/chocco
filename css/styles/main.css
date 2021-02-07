@@ -261,7 +261,7 @@
   transform: rotate(-45deg);
 }
 .menu__btn {
-  position: fixed;
+  position: absolute;
   width: 24px;
   height: 24px;
 }
@@ -288,8 +288,8 @@
   }
 }
 .fixed-menu {
-  position: absolute;
-  right: 0%;
+  position: fixed;
+  right: 2%;
   top: 30%;
   z-index: 2;
 }
@@ -713,17 +713,61 @@
   background-image: url(/image/bar/berry.png), url(/image/bar/bg-image.png);
   background-repeat: no-repeat;
   background-position: center, right;
+  z-index: 0;
 }
 
 .container-bar {
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.bar-arrowleft {
+  display: block;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-top: 2px solid #151515;
+  border-left: 2px solid #151515;
+  transform: rotate(-45deg);
+  border-radius: 8px 0 0 0;
+  margin: 0 1rem;
+  z-index: 7;
+}
+
+.bar-arrowright {
+  display: block;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-top: 2px solid #151515;
+  border-left: 2px solid #151515;
+  transform: rotate(135deg);
+  border-radius: 8px 0 0 0;
+  margin: 0 1rem;
+  z-index: 7;
 }
 
 .bars-img {
-  width: 50%;
+  width: 363px;
   margin-right: 1rem;
+  z-index: 5;
+  position: relative;
+}
+.bars-img::before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 127%;
+  top: 15%;
+  left: -20%;
+  background-image: url(/image/bar/leaf-l.png), url(/image/bar/leaf-r.png);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  z-index: 3;
 }
 
 .bar-descriptions {
@@ -736,6 +780,7 @@
   font-size: AlegreyaSans-Regular;
   font-size: 18px;
   height: 455px;
+  z-index: 1;
 }
 .bar-descriptions__composition {
   width: 90px;
@@ -767,28 +812,24 @@
 .bar-descriptions__propetties {
   display: flex;
   width: inherit;
-  justify-content: space-between;
+  margin-top: 0.5rem;
 }
 .bar-descriptions__order {
   display: flex;
   justify-content: space-evenly;
   width: inherit;
   align-items: center;
+  margin-top: 0.5rem;
 }
 .bar-descriptions__price {
   font-family: AlegreyaSans-Light;
   font-size: 60px;
   color: #151515;
+  margin-right: 1rem;
 }
-
-.bar-descriptions .bar-descriptions .bar-descriptions__calories {
-  width: 50%;
+.bar-descriptions__calories {
+  margin-right: 55px;
 }
-
-.bar-descriptions__weight {
-  width: 50%;
-}
-
 .bar-descriptions__btn {
   display: flex;
   justify-content: center;
@@ -804,6 +845,72 @@
   font-size: 1.1875rem;
 }
 
+@media (max-width: 768px) {
+  .container-bar {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container-bar::before {
+    display: none;
+  }
+  .container-bar::after {
+    display: none;
+  }
+
+  .bar-descriptions {
+    width: 100%;
+    max-width: 498px;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+  }
+  .bar-descriptions__composition {
+    display: none;
+  }
+  .bar-descriptions__propetties {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .bar-arrowright {
+    position: absolute;
+    top: 32%;
+    right: 12%;
+  }
+
+  .bar-arrowleft {
+    position: absolute;
+    top: 32%;
+    left: 12%;
+  }
+
+  .bars-img {
+    width: 37%;
+    height: 40%;
+    min-width: 262px;
+  }
+}
+@media (max-width: 460px) {
+  .bars-img {
+    max-width: 262px;
+    width: 100%;
+  }
+
+  .bar-arrowright {
+    top: 28%;
+    right: 2%;
+  }
+
+  .bar-arrowleft {
+    top: 28%;
+    left: 2%;
+  }
+
+  .bar-descriptions {
+    max-width: 370px;
+    height: 300px;
+  }
+}
 .reviews-bg {
   background-image: url(../../image/reviews/berry-tl.png);
   background-position: 98% 4%;
