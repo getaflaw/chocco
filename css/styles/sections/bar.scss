@@ -1,0 +1,91 @@
+.section-bar {
+    background-color: $base-grey;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 450px;
+        width: 196px;
+        right: 0;
+        top: 73%;
+        background-image: url(/image/bar/berry.png), url(/image/bar/bg-image.png);
+        background-repeat: no-repeat;
+        background-position: center,right;
+    }
+}
+.container-bar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bars-img {
+    width: 50%;
+    margin-right: 1rem;
+}
+.bar-descriptions {
+    width: 344px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    font-size: AlegreyaSans-Regular;
+    font-size: 18px;
+    height: 455px;
+    &__composition {
+        width: 90px;
+        height: 90px;
+        background-color: #60aacc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 14px;
+        font-family: AlegreyaSans-Bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        & svg {
+            fill: #fff;
+            width: 51px;
+            height: 51px;
+            margin-bottom: 0.125rem;
+        }
+    }
+    &__title {
+        font-family: AlegreyaSans-Bold;
+        font-size: 36px;    
+    }
+    &__about {
+        color: #666;
+    }
+    &__propetties {
+        display: flex;
+        width: inherit;
+        justify-content: space-between;
+    }
+    &__order {
+        display: flex;
+        justify-content: space-evenly;
+        width: inherit;
+        align-items: center;
+    }
+    &__price {
+        font-family: AlegreyaSans-Light;
+        font-size: 60px;
+        color: #151515;
+    }
+}
+
+.bar-descriptions
+.bar-descriptions
+.bar-descriptions__calories {
+    width: 50%;
+}
+.bar-descriptions__weight {
+    width: 50%;
+}
+.bar-descriptions__btn {
+    @include btn($base-color, $base-color, #fff);
+}

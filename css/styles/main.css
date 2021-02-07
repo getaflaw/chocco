@@ -698,6 +698,112 @@
     margin: 0;
   }
 }
+.section-bar {
+  background-color: #f8faf9;
+  position: relative;
+}
+.section-bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 450px;
+  width: 196px;
+  right: 0;
+  top: 73%;
+  background-image: url(/image/bar/berry.png), url(/image/bar/bg-image.png);
+  background-repeat: no-repeat;
+  background-position: center, right;
+}
+
+.container-bar {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bars-img {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.bar-descriptions {
+  width: 344px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  font-size: AlegreyaSans-Regular;
+  font-size: 18px;
+  height: 455px;
+}
+.bar-descriptions__composition {
+  width: 90px;
+  height: 90px;
+  background-color: #60aacc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-family: AlegreyaSans-Bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.bar-descriptions__composition svg {
+  fill: #fff;
+  width: 51px;
+  height: 51px;
+  margin-bottom: 0.125rem;
+}
+.bar-descriptions__title {
+  font-family: AlegreyaSans-Bold;
+  font-size: 36px;
+}
+.bar-descriptions__about {
+  color: #666;
+}
+.bar-descriptions__propetties {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+}
+.bar-descriptions__order {
+  display: flex;
+  justify-content: space-evenly;
+  width: inherit;
+  align-items: center;
+}
+.bar-descriptions__price {
+  font-family: AlegreyaSans-Light;
+  font-size: 60px;
+  color: #151515;
+}
+
+.bar-descriptions .bar-descriptions .bar-descriptions__calories {
+  width: 50%;
+}
+
+.bar-descriptions__weight {
+  width: 50%;
+}
+
+.bar-descriptions__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.625rem;
+  width: 9.75rem;
+  border-radius: 30px;
+  border: 1px solid #365a49;
+  background-color: #365a49;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: AlegreyaSans-ExtraBold;
+  font-size: 1.1875rem;
+}
+
 .reviews-bg {
   background-image: url(../../image/reviews/berry-tl.png);
   background-position: 98% 4%;
