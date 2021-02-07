@@ -614,7 +614,6 @@
 .reasons-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 
@@ -640,7 +639,7 @@
   position: absolute;
   background-image: url(../../image/reasons/list-bg.png);
   top: 17%;
-  left: 83%;
+  left: 87%;
 }
 .reasons-list:last-child::after {
   content: "";
@@ -794,6 +793,7 @@
   font-family: AlegreyaSans-Bold;
   text-transform: uppercase;
   border-radius: 5px;
+  position: relative;
 }
 .bar-descriptions__composition svg {
   fill: #fff;
@@ -842,6 +842,43 @@
   text-transform: uppercase;
   font-family: AlegreyaSans-ExtraBold;
   font-size: 1.1875rem;
+}
+
+.composition-list {
+  display: none;
+  height: 398px;
+  width: 329px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: solid 1px #eeeeee;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  left: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  text-transform: none;
+  font-family: AlegreyaSans-Medium;
+  text-align: left;
+}
+.composition-list__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #363636;
+  justify-content: space-between;
+}
+.composition-list__item_text {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.composition-list__item svg {
+  height: 35px;
+  width: 35px;
+  fill: #363636;
 }
 
 @media (max-width: 768px) {
@@ -1237,24 +1274,26 @@
   content: "";
   display: inline-flex;
   position: absolute;
+  /*
   width: 13px;
   height: 11px;
   background-image: url(/icons/sprite.svg);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   opacity: 0;
-  /*
-
+  */
   width: 0.25rem;
   height: 0.4375rem;
-  border: solid $base-color;
+  border: solid #365a49;
   border-width: 0 0.1875rem 0.1875rem 0;
-  top: 0; left: 0; bottom: 0.125rem; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0.125rem;
+  right: 0;
   margin: auto;
   transform: rotate(45deg);
   opacity: 0;
-  */
 }
 .form-payment input[type=checkbox]:checked + .form-payment__checkbox::after {
   opacity: 1;

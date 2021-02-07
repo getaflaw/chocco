@@ -74,7 +74,7 @@
 .reasons-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   width: 100%;
 }
 
@@ -101,7 +101,7 @@
     position: absolute;
     background-image: url(../../image/reasons/list-bg.png);
     top: 17%;
-    left: 83%;
+    left: 87%;
   }
 
   &:last-child::after {
