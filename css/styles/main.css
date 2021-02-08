@@ -980,10 +980,12 @@
   padding: 0;
   background-color: transparent;
   border-bottom: 0;
+  outline: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 8px solid #365a49;
   margin-left: 5px;
+  transition: transform 0.5s;
 }
 .team-items__name {
   display: flex;
@@ -1000,6 +1002,7 @@
   overflow: hidden;
   color: #666;
   font-family: AlegreyaSans-Light;
+  transition: height 1s;
 }
 
 .team-name {
