@@ -22,12 +22,11 @@
   &__btn {
     display: block;
     padding: 0;
-    height: 0;
-    width: 0;
     background-color: transparent;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 20px solid $base-color;
+    border-bottom: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid $base-color;
     margin-left: 5px;
   }
   &__name {
