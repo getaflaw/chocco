@@ -17,9 +17,10 @@
 }
 .container-bar {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
     
 }
 .bar-arrowleft {
@@ -34,6 +35,8 @@
     border-radius: 8px 0 0 0;
     margin: 0 1rem;
     z-index: 7;
+    
+    
 }
 .bar-arrowright {
     display: block;
@@ -47,12 +50,16 @@
     border-radius: 8px 0 0 0;
     margin: 0 1rem;
     z-index: 7;
+    
 }
 .bars-img {
-    width: 363px;
-    margin-right: 1rem;
+    width: 34%;
+    max-width: 363px;
+    min-width: 265px;
+    margin-right: 1.5rem;
     z-index: 5;
     position: relative;
+    
     &::before {
         content: '';
         position: absolute;
@@ -69,6 +76,7 @@
 }
 
 .bar-descriptions {
+    
     width: 344px;
     display: flex;
     justify-content: space-evenly;
@@ -174,7 +182,7 @@
 
 @media (max-width:768px) {
     .container-bar {
-        flex-direction: column;
+        
         justify-content: center;
         &::before {
             display: none;    
@@ -186,26 +194,29 @@
     .bar-descriptions {
         width: 100%;
         max-width: 498px;
-        height: 250px;
+        height: 260px;
+        margin-top: -100px;
         align-items: center;
         text-align: center;
+        order: 2;
         &__composition {
             display: none;
+        }
+        &__title {
+            font-size: 30px;
+            width: 297px;
         }
         &__propetties {
             justify-content: center;
             text-align: left;
         }
     }
-    .bar-arrowright {
-        position: absolute;
-        top: 32%;
-        right: 12%;
-    }
+    
     .bar-arrowleft {
-        position: absolute;
-        top: 32%;
-        left: 12%;
+        order: -1;
+    }
+    .bar-arrowright {
+        order: -1;
     }
     .bars-img {
         width: 37%;
@@ -221,10 +232,12 @@
         width: 100%;
     }
     .bar-arrowright {
+        position: absolute;
         top: 28%;
         right: 2%;
     }
     .bar-arrowleft {
+        position: absolute;
         top: 28%;
         left: 2%;
     }

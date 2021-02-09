@@ -14,6 +14,8 @@ coWorker.addEventListener('click',function(event){
         elementPerents.style.height="80px";
         event.target.style.transform="rotate(180deg)";
     }
+    let leng = event.target.length;
+    console.log(leng);
 })
 
 
