@@ -956,6 +956,7 @@
 .container-team {
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .team-title {
@@ -969,17 +970,25 @@
 .team-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .team-items {
   width: 100%;
   max-width: 223px;
+  height: 100%;
   text-align: center;
+  margin-right: 1rem;
+}
+.team-items:last-child {
+  margin-right: 0;
 }
 .team-items__img {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 288px;
+  transition: display 1s;
 }
 .team-items__btn {
   display: block;
@@ -1017,6 +1026,21 @@
   margin: 1rem 0;
 }
 
+@media (max-width: 768px) {
+  .team-list {
+    flex-direction: column;
+  }
+
+  .team-items__img {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .team-items__img img {
+    height: 100%;
+    transition: height 1s;
+  }
+}
 .reviews-bg {
   background-image: url(../../image/reviews/berry-tl.png);
   background-position: 98% 4%;
