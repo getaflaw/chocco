@@ -649,7 +649,7 @@
   width: 7.8125rem;
   height: 7.8125rem;
   fill: #2e2e2d;
-  background-image: url(/image/reasons/elips.png);
+  background-image: url(../../image/reasons/elips.png);
 }
 .reasons-list__title {
   font-family: AlegreyaSans-Bold;
