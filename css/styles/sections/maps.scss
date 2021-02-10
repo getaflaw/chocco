@@ -40,9 +40,11 @@
         width: 1.25rem;
         height: 1.25rem;
         fill: #ccc;
+        transition: 1s;
         &:hover {
             background-color: #ffffff;  
             fill: black;
+            
         }
     }
 }
