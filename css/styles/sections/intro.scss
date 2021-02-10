@@ -361,7 +361,7 @@
     }
     &::after {
       content: "";
-      background-image: url(/image/intro/intro-bg-768.png);
+      background-image: url(../../image/intro/intro-bg-768.png);
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -382,7 +382,7 @@
     padding: 0 0.8rem;
     &::after {
       content: "";
-      background-image: url(/image/intro/intro-bg-768.png);
+      background-image: url(../../image/intro/intro-bg-768.png);
       background-size: contain;
       background-repeat: no-repeat;
       width: 100%;
@@ -396,7 +396,7 @@
     &::before {
       content: "";
       display: block;
-      background-image: url(/image/intro/intro_bg.png);
+      background-image: url(../../image/intro/intro_bg.png);
       background-size: cover;
       background-repeat: no-repeat;
       position: absolute;

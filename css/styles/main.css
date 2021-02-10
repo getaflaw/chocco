@@ -471,7 +471,7 @@
   }
   .intro-content-jpg::after {
     content: "";
-    background-image: url(/image/intro/intro-bg-768.png);
+    background-image: url(../../image/intro/intro-bg-768.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -493,7 +493,7 @@
   }
   .intro-container::after {
     content: "";
-    background-image: url(/image/intro/intro-bg-768.png);
+    background-image: url(../../image/intro/intro-bg-768.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -507,7 +507,7 @@
   .intro-container::before {
     content: "";
     display: block;
-    background-image: url(/image/intro/intro_bg.png);
+    background-image: url(../../image/intro/intro_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -708,7 +708,7 @@
   width: 196px;
   right: 0;
   top: 73%;
-  background-image: url(/image/bar/berry.png), url(/image/bar/bg-image.png);
+  background-image: url(../../image/bar/berry.png), url(../../image/bar/bg-image.png);
   background-repeat: no-repeat;
   background-position: center, right;
   z-index: 0;
@@ -765,7 +765,7 @@
   width: 127%;
   top: 15%;
   left: -20%;
-  background-image: url(/image/bar/leaf-l.png), url(/image/bar/leaf-r.png);
+  background-image: url(../../image/bar/leaf-l.png), url(../../image/bar/leaf-r.png);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
   z-index: 3;
@@ -1457,7 +1457,7 @@
   }
 }
 .maps-bg {
-  background-image: url(/image/maps/maps.png);
+  background-image: url(../../image/maps/maps.png);
   background-size: cover;
   width: 100%;
   position: relative;
