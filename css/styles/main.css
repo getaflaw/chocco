@@ -922,14 +922,15 @@
 }
 
 @media (max-width: 768px) {
-  .container-bar {
-    justify-content: center;
-  }
   .container-bar::before {
     display: none;
   }
   .container-bar::after {
     display: none;
+  }
+
+  .slider__main {
+    height: 100%;
   }
 
   .bar-descriptions {

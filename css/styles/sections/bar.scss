@@ -217,13 +217,16 @@
 
 @media (max-width: 768px) {
   .container-bar {
-    justify-content: center;
+    
     &::before {
       display: none;
     }
     &::after {
       display: none;
     }
+  }
+  .slider__main {
+    height: 100%;
   }
   .bar-descriptions {
     width: 100%;
