@@ -17,8 +17,7 @@
 @font-face {
   font-family: AlegreyaSans-ExtraBold;
   src: url(../../fonts/AlegreyaSans-ExtraBold.ttf);
-} 
-
+}
 @font-face {
   font-family: AlegreyaSans-ExtraBoldItalic;
   src: url(../../fonts/AlegreyaSans-ExtraBoldItalic.ttf);
@@ -721,8 +720,9 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  transition: 1s;
 }
-.slider__left {
+.slider__main {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -733,18 +733,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 1s;
 }
-.slider__right {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  flex-wrap: wrap;
-  width: 100%;
-  top: 50%;
+.slider__main_Rtoright {
+  left: -50%;
+}
+.slider__main_Rtoleft {
   left: 150%;
-  transform: translate(-50%, -50%);
+  transition: 0s;
+}
+.slider__main_Ltoright {
+  left: 150%;
+}
+.slider__main_Ltoleft {
+  left: -50%;
+  transition: 0s;
+}
+.slider__main_fade {
+  opacity: 0;
 }
 
 .bar-arrowleft {

@@ -16,16 +16,15 @@
     z-index: 0;
   }
 }
-.container-bar {
-}
+
 .slider {
   display: flex;
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
-
-  &__left {
+  transition: 1s;
+  &__main {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,18 +35,26 @@
     top: 50%;
     left: 050%;
     transform: translate(-50%, -50%);
-  }
-  &__right {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    flex-wrap: wrap;
-    width: 100%;
-    top: 50%;
-    left: 150%;
-    transform: translate(-50%, -50%);
+    transition: 1s;
+    &_Rtoright {
+      left: -50%;
+    }
+    &_Rtoleft {
+      left: 150%;
+      transition: 0s;
+    }
+    &_Ltoright {
+      
+      left: 150%;
+      
+    }
+    &_Ltoleft {
+      left: -50%;
+      transition: 0s;
+    }
+    &_fade {
+      opacity: 0;
+    }
   }
 }
 .bar-arrowleft {
