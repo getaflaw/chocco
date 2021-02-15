@@ -1122,6 +1122,11 @@
   background-position: top right;
   width: 98%;
   max-width: 940px;
+  position: relative;
+}
+.reviews-content_fade {
+  opacity: 0;
+  position: absolute;
 }
 
 .reviews-text {
