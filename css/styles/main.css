@@ -1103,12 +1103,16 @@
 .menu-list {
   display: flex;
   justify-content: flex-end;
+  width: auto;
   height: 100%;
 }
 
 .menu-items {
+  width: auto;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
+  transition: all 1s;
 }
 .menu-items__inner {
   position: relative;
@@ -1129,7 +1133,7 @@
 }
 .menu-items__content {
   position: relative;
-  transition: width 1s;
+  transition: all 0.3s;
   font-family: AlegreyaSans-Regulare;
   font-size: 16px;
   line-height: 24px;
@@ -1147,7 +1151,9 @@
   z-index: 2;
 }
 .menu-items__content_active {
-  width: 85%;
+  width: 100%;
+  max-width: auto;
+  flex: 2;
 }
 .menu-items__content p {
   min-width: 240px;

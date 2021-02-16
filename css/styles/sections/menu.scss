@@ -17,13 +17,17 @@
 .menu-list {
     display: flex; 
     justify-content: flex-end;
+    width: auto;
     height: 100%;
     
 }
 .menu-items {
-    
+    width: auto;
     height: 100%;
     display: flex;
+    justify-content: flex-end;
+    transition: all 1s;
+    
     &__inner {
         position: relative;
         width: 100px;
@@ -40,7 +44,8 @@
     }
     &__content {
         position:relative;
-        transition: width 1s;
+        transition: all 0.3s;
+        
         &::before {
             content: '';
             position: absolute;
@@ -57,7 +62,10 @@
         overflow: hidden;
         display: flex;
         &_active {
-            width: 85%;
+            width: 100%;
+            max-width: auto;
+            flex: 2;
+            
         }
         & p {
             min-width: 240px;
