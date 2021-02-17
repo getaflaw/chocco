@@ -26,7 +26,7 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    transition: all 1s;
+    
     
     &__inner {
         position: relative;
@@ -44,7 +44,7 @@
     }
     &__content {
         position:relative;
-        transition: all 0.3s;
+        transition: width 1s;
         
         &::before {
             content: '';
@@ -62,15 +62,16 @@
         overflow: hidden;
         display: flex;
         &_active {
-            width: 100%;
-            max-width: auto;
-            flex: 2;
+            width: 400px;
+            
+           
             
         }
         & p {
-            min-width: 240px;
-            width: 100%;
-            max-width: 440px;
+            position: absolute;
+            width: 400px;
+            overflow: hidden;
+           
             padding: 1rem;
             z-index: 3;
         }
