@@ -481,49 +481,55 @@
       </section>
       <section class="section delivery-bg">
         <div class="container delivery-container">
+          <div class="form-msg">
+            <span class="form-msg__text"></span>
+            <button class="form-msg__btn" id="responseClose">Закрыть</button>
+          </div>
           <h2 class="delivery-title">закажите доставку</h2>
-          <form action="" class="delivery-form">
+          <form action="" id="delivery-form">
             <div class="form-left">
               <div class="form-name">
                 Имя <br />
-                <input type="name" />
+                <input class="form-left__input" type="name" name="name" required/>
               </div>
               <div class="form-number">
-                Телефон <br /><input type="number" />
+                Телефон <br />
+                <input class="form-left__input" type="number" name="phone" required/>
               </div>
               <div class="form-streat">
                 Улица <br />
-                <input type="streat" />
+                <input class="form-left__input" type="text" name="streat" required/>
               </div>
               <div class="form-house">
                 Дом <br />
-                <input type="address" />
+                <input class="form-left__input" type="number" name="house" required/>
               </div>
               <div class="form-corps">
                 Корпус <br />
-                <input type="address" />
+                <input class="form-left__input" type="number" name="corps"/>
               </div>
               <div class="form-door">
                 Квартира <br />
-                <input type="address" />
+                <input class="form-left__input" type="number" name="door" required/>
               </div>
               <div class="form-float">
                 Этаж <br />
-                <input type="address" />
+                <input class="form-left__input" type="number" name="float"/>
               </div>
             </div>
             <div class="form-right">
               <div class="form-comments">
                 Комментарии <br />
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="coments" id="" cols="30" rows="10"></textarea>
               </div>
               <label for="radio_cash" class="form-payment">
                 <input
                   class="form-payment__check"
                   type="radio"
                   name="payment"
+                  value="cash"
                   id="radio_cash"
-                  checked
+                  checked 
                 />
                 <div class="form-payment__radio"></div>
                 Потребуется сдача</label
@@ -533,19 +539,20 @@
                   class="form-payment__check"
                   type="radio"
                   name="payment"
-                  id="radio_card"
+                  id="radio_card" 
+                  value="card"
                 />
                 <div class="form-payment__radio"></div>
                 Оплата по карте</label
               >
               <label for="dontcall" class="form-payment"
-                ><input type="checkbox" name="" id="dontcall" checked />
+                ><input type="checkbox" name="dontcall" id="dontcall" checked />
                 <div class="form-payment__checkbox"></div>
                 Не перезванивать</label
               >
               <div class="form-btn">
-                <a href="#" class="form-order">Заказать</a>
-                <a href="#" class="form-clear">Очистить</a>
+                <button type="submit" class="form-order">Заказать</button>
+                <button type="reset" class="form-clear">Очистить</button>
               </div>
             </div>
           </form>
@@ -614,5 +621,6 @@
     <script src="./javascript/team-discription.js"></script>
     <script src="./javascript/slider.js"></script>
     <script src="./javascript/menu-bars.js"></script>
+    <script src="./javascript/delivery-form.js"></script>
   </body>
 </html>

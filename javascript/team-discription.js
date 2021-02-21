@@ -1,5 +1,6 @@
 const coWorker = document.querySelector('.team-list');
-
+var cloneImg;
+var elementImgclone;
 coWorker.addEventListener('click',function(event){
     if (!event.target.matches('button')) return
     var element = event.target;
@@ -17,17 +18,17 @@ coWorker.addEventListener('click',function(event){
         event.target.style.transform="rotate(180deg)";
         console.log(currentHeight);
     }
-    var cloneImg = imgCoworker.cloneNode(true);
-    var elementImgclone = element.parentElement.nextElementSibling;
-    
+    cloneImg = imgCoworker.cloneNode(true);
+    elementImgclone = element.parentElement.nextElementSibling;
     if (bodyWidth < '768'){
-        if (elementImgclone.style.display=="block"){
-            elementImgclone.remove();
+        if (elementImgclone.style.height=='288px'){
+            elementImgclone.style.height='0';
+            setTimeout(function(){elementImgclone.remove();},500)
         }
         else{
-        cloneImg.style.display="block";
-        cloneImg.style.opacity="1";
         element.parentElement.after(cloneImg);
+        setTimeout(function(){cloneImg.style.height='288px';},10)
+        
         }
         
         

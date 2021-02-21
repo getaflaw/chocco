@@ -19,6 +19,7 @@
   height: 100%;
   text-align: center;
   margin-right: 1rem;
+  transition: 1s;
   &:last-child {
     margin-right: 0;
   }
@@ -26,7 +27,7 @@
     width: 100%;
     max-width: 220px;
     height: 288px;
-    transition: display 1s;
+    
     
   }
   &__btn {
@@ -71,13 +72,10 @@
   }
   .team-items {
     &__img {
-      display: none;
-      opacity: 0;
-      transition: opacity 1s;
-      & img {
-        height: 100%;
-        transition: height 1s;
-      }
+      overflow: hidden;
+      height: 0;
+      transition: height 0.5s;
+      
     }
 
   }
