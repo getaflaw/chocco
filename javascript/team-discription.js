@@ -1,13 +1,14 @@
 const coWorker = document.querySelector('.team-list');
 var cloneImg;
 var elementImgclone;
+const bodyWidth = document.body.clientWidth;
 coWorker.addEventListener('click',function(event){
     if (!event.target.matches('button')) return
     var element = event.target;
     var elementPerents = element.parentElement.parentElement.lastElementChild;
     var currentHeight = elementPerents.clientHeight;
     var imgCoworker = element.parentElement.previousElementSibling;
-    var bodyWidth = document.body.clientWidth;
+    
     if (currentHeight >= "80"){
         event.target.style.transform="none";
         elementPerents.style.height="0";

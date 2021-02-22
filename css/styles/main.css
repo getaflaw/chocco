@@ -752,7 +752,7 @@
   transition: 0s;
 }
 .slider__main_fade {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .bar-arrowleft {
@@ -767,6 +767,7 @@
   border-radius: 8px 0 0 0;
   margin: 0 1rem;
   z-index: 7;
+  cursor: pointer;
 }
 .bar-arrowleft:focus {
   outline: none;
@@ -784,6 +785,7 @@
   border-radius: 8px 0 0 0;
   margin: 0 1rem;
   z-index: 7;
+  cursor: pointer;
 }
 .bar-arrowright:focus {
   outline: none;
@@ -823,6 +825,7 @@
   z-index: 2;
 }
 .bar-descriptions__composition {
+  cursor: pointer;
   width: 90px;
   height: 90px;
   background-color: #60aacc;
@@ -885,6 +888,12 @@
   font-family: AlegreyaSans-ExtraBold;
   font-size: 1.1875rem;
   cursor: pointer;
+}
+.bar-descriptions__btn:hover {
+  transition: 0.5s;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #365a49;
 }
 
 .composition-list {
@@ -1032,6 +1041,7 @@
   height: 288px;
 }
 .team-items__btn {
+  cursor: pointer;
   display: block;
   padding: 0;
   background-color: transparent;
@@ -1084,8 +1094,9 @@
   background-image: url(/image/menu/bg.png);
   background-size: cover;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   color: #fff;
+  position: relative;
 }
 
 .menu-title {
@@ -1095,7 +1106,9 @@
   text-transform: uppercase;
   padding-top: 3rem;
   text-align: center;
-  width: 25%;
+  top: 5%;
+  left: 5%;
+  position: absolute;
 }
 
 .menu-list {
@@ -1110,6 +1123,38 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  order: 0;
+}
+.menu-items__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  right: 4%;
+  display: block;
+  border: 0;
+  background: none;
+  height: 20px;
+  width: 20px;
+  z-index: 4;
+}
+.menu-items__btn:focus, .menu-items__btn:active {
+  outline: 0;
+}
+.menu-items__btn::after {
+  position: absolute;
+  content: " ";
+  height: 21px;
+  width: 2px;
+  background-color: #ccc;
+  transform: rotate(45deg);
+}
+.menu-items__btn::before {
+  position: absolute;
+  content: " ";
+  height: 21px;
+  width: 2px;
+  background-color: #ccc;
+  transform: rotate(-45deg);
 }
 .menu-items__inner {
   position: relative;
@@ -1118,6 +1163,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .menu-items__inner_milk-bar {
   background-image: url(/image/menu/milk-bar.png);
@@ -1154,7 +1200,7 @@
   position: absolute;
   width: 400px;
   overflow: hidden;
-  padding: 1rem;
+  padding: 2rem 1rem;
   z-index: 3;
 }
 
@@ -1166,6 +1212,36 @@
   padding-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  .menu-items {
+    width: 100%;
+  }
+  .menu-items__content_active {
+    width: calc(100vw - 300px);
+  }
+  .menu-items__content p {
+    width: calc(100vw - 300px);
+  }
+}
+@media (max-width: 480px) {
+  .menu-items.is-active {
+    order: -1;
+  }
+  .menu-items__inner {
+    width: 80px;
+  }
+  .menu-items__content_active {
+    width: calc(100vw - 240px);
+    overflow: visible;
+  }
+  .menu-items__content::before {
+    width: calc(100vw - 80px);
+  }
+  .menu-items__content p {
+    width: calc(100vw - 80px);
+    display: block;
+  }
+}
 .reviews-bg {
   background-image: url(../../image/reviews/berry-tl.png);
   background-position: 98% 4%;
@@ -1264,6 +1340,7 @@
   display: flex;
   margin-top: 1.5625rem;
   z-index: 2;
+  cursor: pointer;
 }
 .reviews-list__users {
   width: 4.1875rem;

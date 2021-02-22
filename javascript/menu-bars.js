@@ -1,10 +1,13 @@
 const sliderMenu = document.querySelectorAll('.menu-items__inner');
 const hiddenSlide = document.querySelectorAll('.menu-items__content');
-
-
+const listSlider = document.querySelectorAll('.menu-items');
+const menuCloseBtn = document.querySelectorAll('.menu-items__btn');
 sliderMenu.forEach(function(item){
     item.addEventListener('click',function(){
-        
+        listSlider.forEach((element)=> {
+            element.classList.remove('is-active');
+        });
+        let liSlide = item.parentElement;
         hiddenSlide.forEach(function(slide){
             slide.classList.remove("menu-items__content_active");
         });
@@ -14,12 +17,17 @@ sliderMenu.forEach(function(item){
             
         }
         else {
+        liSlide.classList.add('is-active');
+        
         currentSlide.classList.add("menu-items__content_active");
-        closeBtn.classList.add('menu__close');
-        currentSlide.appendChild(closeBtn);
-        closeBtn.addEventListener('click', function(){
-        closeBtn.remove();
-        currentSlide.classList.remove("menu-items__content_active");
+        
+        menuCloseBtn.forEach((itemBtn)=> {
+            itemBtn.addEventListener('click', function(){
+                currentSlide.classList.remove("menu-items__content_active");
+                listSlider.forEach((element)=> {
+                    element.classList.remove('is-active');
+                });
+        })
         
         });
     }

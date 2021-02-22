@@ -44,16 +44,14 @@
       transition: 0s;
     }
     &_Ltoright {
-      
       left: 150%;
-      
     }
     &_Ltoleft {
       left: -50%;
       transition: 0s;
     }
     &_fade {
-      opacity: 0;
+      visibility: hidden;
     }
   }
 }
@@ -69,6 +67,7 @@
   border-radius: 8px 0 0 0;
   margin: 0 1rem;
   z-index: 7;
+  cursor: pointer;
   &:focus {
     outline: none;
   }
@@ -85,6 +84,7 @@
   border-radius: 8px 0 0 0;
   margin: 0 1rem;
   z-index: 7;
+  cursor: pointer;
   &:focus {
     outline: none;
   }
@@ -124,6 +124,7 @@
   height: 455px;
   z-index: 2;
   &__composition {
+    cursor: pointer;
     width: 90px;
     height: 90px;
     background-color: #60aacc;
@@ -174,6 +175,12 @@
   }
   &__btn {
     @include btn($base-color, $base-color, #fff);
+    &:hover {
+      transition: 0.5s;
+      border: 1px solid #fff;
+      background-color: #fff;
+      color: $base-color;
+    }
   }
 }
 
@@ -217,7 +224,6 @@
 
 @media (max-width: 768px) {
   .container-bar {
-    
     &::before {
       display: none;
     }
