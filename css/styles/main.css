@@ -820,7 +820,7 @@
   font-size: AlegreyaSans-Regular;
   font-size: 18px;
   height: 455px;
-  z-index: 1;
+  z-index: 2;
 }
 .bar-descriptions__composition {
   width: 90px;
@@ -1200,7 +1200,6 @@
 
 .reviews-content {
   padding: 3.125rem 2.75rem 2.125rem;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color: #f8faf9;
@@ -1209,11 +1208,10 @@
   background-position: top right;
   width: 98%;
   max-width: 940px;
-  position: relative;
+  display: none;
 }
-.reviews-content_fade {
-  opacity: 0;
-  position: absolute;
+.reviews-content.is-active {
+  display: flex;
 }
 
 .reviews-text {
@@ -1265,6 +1263,7 @@
 .reviews-list {
   display: flex;
   margin-top: 1.5625rem;
+  z-index: 2;
 }
 .reviews-list__users {
   width: 4.1875rem;
@@ -1292,6 +1291,9 @@
   background-size: cover;
   border: 0.0625rem solid #fff;
   border-radius: 50%;
+}
+.reviews-list__users.is-active {
+  border: 4px solid #365a49;
 }
 
 .delivery-bg {
@@ -1372,7 +1374,7 @@
     font-size: 2.5rem;
   }
 }
-#delivery-form {
+.delivery-form {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1384,10 +1386,10 @@
   line-height: 1.875rem;
   transition: 0.5s;
 }
-#delivery-form input:focus {
+.delivery-form input:focus {
   outline: 0.125rem solid #365a49;
 }
-#delivery-form textarea:focus {
+.delivery-form textarea:focus {
   outline: 0.125rem solid #365a49;
 }
 

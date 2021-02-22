@@ -427,7 +427,8 @@
       <section class="section reviews-bg">
         <div class="container reviews-container">
           <h2 class="reviews-title">Отзывы</h2>
-          <div class="reviews-content">
+          <ul class="reviews-list">
+          <li class="reviews-content is-active user1">
             <div class="reviews-content__img">
               <img src="image/reviews/user1.png" alt="" />
             </div>
@@ -441,41 +442,42 @@
               </p>
               <span class="reviews-text__author">Алёна Хмельницкая </span>
             </div>
-          </div>
-          <div class="reviews-content reviews-content_fade">
+          </li>
+          <li class="reviews-content user2">
             <div class="reviews-content__img">
               <img src="image/reviews/user2.png" alt="" />
             </div>
             <div class="reviews-text">
-              <h4 class="reviews-text__title">Лучший перекус</h4>
+              <h4 class="reviews-text__title">Идеально подходят для спортсменов</h4>
               <p class="reviews-text__inner">
-                Я ем малыми порциями, но часто. Это повышает мою продуктивность
-                в разы. В течение дня сижу за компьютером и часто отходить в
-                кафе или на кухню просто не могу себе позволить. А батончик – он
-                всегда под рукой. Это приятно и удобно.
+                После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать.
+                 А кушать хочется. Протеиновые батончики всегда выручают в этом плане.
+                  Спасибо производителю за этот качественный и экологичный продукт. 
               </p>
-              <span class="reviews-text__author">Алёна Хмельницкая </span>
+              <span class="reviews-text__author">Вадим Грачев </span>
             </div>
-          </div>
-          <div class="reviews-content reviews-content_fade">
+          </li>
+          <li class="reviews-content user3">
             <div class="reviews-content__img">
               <img src="image/reviews/user3.png" alt="" />
             </div>
             <div class="reviews-text">
-              <h4 class="reviews-text__title">Лучший перекус</h4>
+              <h4 class="reviews-text__title">Лучшие батончики премиум уровня</h4>
               <p class="reviews-text__inner">
-                Я ем малыми порциями, но часто. Это повышает мою продуктивность
-                в разы. В течение дня сижу за компьютером и часто отходить в
-                кафе или на кухню просто не могу себе позволить. А батончик – он
-                всегда под рукой. Это приятно и удобно.
+                Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, 
+                однако, как говорится – оно того стоит. Нравится носить с собой, 
+                нравится держать в руке. Ну и конечно же, кушать. 
+                Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. 
+                Но это скорее плюс, чем минус.
               </p>
-              <span class="reviews-text__author">Алёна Хмельницкая </span>
+              <span class="reviews-text__author">Мария Орлова </span>
             </div>
-          </div>
+          </li>
+        </ul>
           <ul class="reviews-list">
-            <li class="reviews-list__users reviews-list__users_user1"></li>
-            <li class="reviews-list__users reviews-list__users_user2"></li>
-            <li class="reviews-list__users reviews-list__users_user3"></li>
+            <li class="reviews-list__users is-active reviews-list__users_user1" data-tab-name="user1"></li>
+            <li class="reviews-list__users reviews-list__users_user2" data-tab-name="user2"></li>
+            <li class="reviews-list__users reviews-list__users_user3" data-tab-name="user3"></li>
           </ul>
         </div>
       </section>
@@ -486,7 +488,7 @@
             <button class="form-msg__btn" id="responseClose">Закрыть</button>
           </div>
           <h2 class="delivery-title">закажите доставку</h2>
-          <form action="" id="delivery-form">
+          <form action="" class="delivery-form" id="delivery-form">
             <div class="form-left">
               <div class="form-name">
                 Имя <br />
@@ -622,5 +624,6 @@
     <script src="./javascript/slider.js"></script>
     <script src="./javascript/menu-bars.js"></script>
     <script src="./javascript/delivery-form.js"></script>
+    <script src="./javascript/reviews-list.js"></script>
   </body>
 </html>
