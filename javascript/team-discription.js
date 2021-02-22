@@ -9,6 +9,7 @@ coWorker.addEventListener('click',function(event){
     var currentHeight = elementPerents.clientHeight;
     var imgCoworker = element.parentElement.previousElementSibling;
     
+    
     if (currentHeight >= "80"){
         event.target.style.transform="none";
         elementPerents.style.height="0";
@@ -17,11 +18,12 @@ coWorker.addEventListener('click',function(event){
         elementPerents.style.height="80px";
         
         event.target.style.transform="rotate(180deg)";
-        console.log(currentHeight);
+        
     }
     cloneImg = imgCoworker.cloneNode(true);
     elementImgclone = element.parentElement.nextElementSibling;
     if (bodyWidth < '768'){
+
         if (elementImgclone.style.height=='288px'){
             elementImgclone.style.height='0';
             setTimeout(function(){elementImgclone.remove();},500)
