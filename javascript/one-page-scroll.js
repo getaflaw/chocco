@@ -1,3 +1,14 @@
+const sliderScroll = document.querySelector('.slider-scroll');
+
+
 window.addEventListener('wheel', (eventScroll)=>{
-    console.log(eventScroll.deltaY);
+    let sliderTop= parseInt(sliderScroll.style.top);
+    
+    if (eventScroll.deltaY > 0 && sliderTop > -700) {
+        sliderScroll.style.top = sliderTop -100 + '%';
+    }
+    if (eventScroll.deltaY < 0 && sliderTop < 0) {
+        sliderScroll.style.top = sliderTop +100 + '%';
+    }
+    
 });

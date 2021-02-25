@@ -1,0 +1,100 @@
+.section-howit {
+  background-color: $base-grey;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 197px;
+    height: 264px;
+    background-image: url(/image/howit/berry-bg.png);
+    top: 60%;
+    right: 0;
+  }
+}
+
+.container-howit {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 135px;
+    width: 72px;
+    background-image: url(/image/howit/leaf-l.png);
+    top: 50%;
+    left: 2%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 77px;
+    width: 90px;
+    background-image: url(/image/howit/leaf-r.png);
+    top: 20%;
+    right: 2%;
+  }
+}
+
+.howit-title {
+  @include title;
+}
+
+.howit-player {
+  height: 370px;
+  width: 660px;
+  position: relative;
+}
+.player {
+  &__splash {
+    top: 0;
+    position: absolute;
+    height: 370px;
+    width: 660px;
+    background-image: url(/image/howit/video-spoiler.png);
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 35px;
+    width: 660px;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    background-color: #404040;
+    
+  }
+}
+
+.control {
+  &__play {
+    border: 0;
+    outline: 0;
+    width: 0;
+    height: 0;
+    background-color: #404040;
+    margin-left: 8px;
+    border-style: solid;
+    border-width: 10px 0 10px 18px;
+    border-color: transparent transparent transparent #222;
+    &.pause {
+        border: 0;
+        border-width: 0 5px 0 5px;
+        border-style: solid;
+        border-color: #222;
+        height: 20px;  
+    }
+  }
+  &__progress {
+  }
+  &__duration {
+      font-size: 14px;
+      color: #222;
+  }
+}
