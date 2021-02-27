@@ -1461,24 +1461,114 @@
 .control__play {
   border: 0;
   outline: 0;
-  width: 0;
+  width: 40px;
   height: 0;
   background-color: #404040;
-  margin-left: 8px;
   border-style: solid;
   border-width: 10px 0 10px 18px;
   border-color: transparent transparent transparent #222;
+  cursor: pointer;
 }
 .control__play.pause {
   border: 0;
-  border-width: 0 5px 0 5px;
+  border-width: 0 0 0 5px;
   border-style: solid;
   border-color: #222;
   height: 20px;
+  position: relative;
+}
+.control__play.pause::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 10px;
+  height: 20px;
+  width: 5px;
+  background-color: #222;
+  top: 0;
+}
+.control__progress {
+  height: 7px;
+  width: 400px;
+  background-color: #222;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.control__progress-btn {
+  outline: 0;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  top: -50%;
+  transform: translate(-50%, 0);
+  left: 0;
+  transition: 0.8s;
 }
 .control__duration {
   font-size: 14px;
   color: #222;
+  margin-left: 4px;
+}
+.control__speaker {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.control__speaker.mute::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #dbd3d3;
+  transform: rotate(-45deg);
+  top: 40%;
+  left: 0;
+}
+.control__volume {
+  width: 100px;
+  cursor: pointer;
+  height: 15px;
+  position: relative;
+  background-color: transparent;
+}
+.control__volume-current {
+  position: absolute;
+  width: 80%;
+  height: 7px;
+  background-color: #222;
+  top: 49%;
+  border-radius: 5px;
+  transform: translate(0, -50%);
+}
+.control__volume-current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #dbd3d3;
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: 0;
+  transition: 0.8s;
+}
+.control__volume::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 7px;
+  background-color: #777272;
+  top: 49%;
+  border-radius: 5px;
+  transform: translate(0, -50%);
 }
 
 .delivery-bg {

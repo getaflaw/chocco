@@ -491,13 +491,19 @@
           <div class="container container-howit">
             <h2 class="howit-title">как мы работаем</h2>
             <div class="howit-player">
-              <video src="video/videoplayback.mp4" muted width="660px" height="370px" type="video/mp4" id="video"></video>
-              <div class="player__splash hidden"></div>
+              <video src="video/videoplayback.mp4" width="660px" height="370px" type="video/mp4" id="video"></video>
+              <div class="player__splash"></div>
               <div class="player__control">
                 <button class="control__play"></button>
-                <div class="control__progress"></div>
+                <div class="control__progress"> 
+                <button class="control__progress-btn"></button>
+                </div>
+                <div class="control__speaker">🔈</div>
+                <div class="control__volume">
+                  <div class="control__volume-current"></div>
+                </div>
                 <div class="control__duration">
-                  <span class="control__duration-current">0:00 /</span>
+                  <span class="control__duration-current">0:00</span> /
                   <span class="control__duration-full">0:00</span>
                 </div>
               </div>
