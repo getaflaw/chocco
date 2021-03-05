@@ -1,0 +1,21 @@
+@mixin title {
+    font-family: AlegreyaSans-Bold;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@mixin btn($color-border:#fff, $color-bg:#fff, $color-text:#365a49) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.625rem;
+    width: 9.75rem;
+    border-radius: 30px;
+    border: 1px solid $color-border;   
+    background-color: $color-bg;
+    color: $color-text;
+    text-transform: uppercase;
+    font-family: AlegreyaSans-ExtraBold;
+    font-size: 1.1875rem;
+    cursor: pointer;
+}

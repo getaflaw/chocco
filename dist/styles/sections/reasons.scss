@@ -1,0 +1,170 @@
+.reasons-bg {
+  background-color: #fff;
+  background-image: url(../../image/reasons/reasons_bg.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    height: 19.6875rem;
+    width: 10.0624rem;
+    position: absolute;
+    background-image: url(../../image/reasons/beery_bg.png);
+    background-size: auto;
+    top: 80%;
+    left: 0;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 768px) {
+  .reasons-bg {
+    background-position: left 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reasons-bg {
+    background-image: none;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.reasons-container {
+  padding: 0 5rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .reasons-container {
+    padding: 0 1rem 0;
+  }
+}
+
+.reasons-title {
+  max-width: 25.625rem;
+  width: 100%;
+  &__inner {
+    @include title;
+    display: block;
+    
+  }
+}
+
+.subtitle-reasons {
+  font-family: AlegreyaSans-Thin;
+  font-size: 1.125rem;
+  margin: 1.15625rem 0 3.75rem;
+  color: #666666;
+}
+@media (max-width: 480px) {
+  .reasons-title__inner {
+    font-size: 40px;
+    
+  }
+  .subtitle-reasons {margin-bottom: 2.5rem;}
+}
+
+.reasons-content {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .reasons-content {flex-direction: column;}
+}
+
+.reasons-list {
+  width: 17.5rem;
+  
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1.3125rem;
+    width: 4.1875rem;
+    display: block;
+
+    position: absolute;
+    background-image: url(../../image/reasons/list-bg.png);
+    top: 17%;
+    left: 87%;
+  }
+
+  &:last-child::after {
+    content: "";
+    display: none;
+  }
+
+  &__icon {
+    width: 7.8125rem;
+    height: 7.8125rem;
+    fill: #2e2e2d;
+    background-image: url(../../image/reasons/elips.png);
+  }
+
+  &__title {
+    font-family: AlegreyaSans-Bold;
+    font-size: 1.6875rem;
+    color: #000;
+    width: 100%;
+    margin: 2.1875rem 0 1.875rem 0;
+  }
+
+  &__text {
+    font-family: AlegreyaSans-Light;
+    font-size: 1.125rem;
+    color: #666666;
+  }
+}
+
+@media (max-width: 768px) {
+  .reasons-list {
+    width: calc(100%/3 -20px);
+    &::after {
+      display: none;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .reasons-content {
+    flex-direction: column;
+    
+  }
+  .reasons-list {
+    width: 100%;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
+    text-align: left;
+    &__icon {
+      width: 100%;
+      max-width: 7.8125rem;
+      margin-right: 0.5rem;
+    }
+    &__block {
+      width: 19rem;
+    }
+    &__title {
+      margin: 0;
+      
+    }
+    &__text {
+
+    }
+  }
+}

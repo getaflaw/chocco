@@ -1,0 +1,297 @@
+.delivery-bg {
+  background-image: url(../../image/delivery/berry-bg.png),
+    url(../../image/delivery/laef-bg.png), url(../../image/delivery/image-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover;
+  background-position: 2% 90%, 99% 80%;
+}
+
+@media (max-width: 768px) {
+  .delivery-bg { background-image: url(../../image/delivery/image-bg.png);
+    background-size: cover;}
+
+}
+.delivery-container {
+  align-items: center;
+  justify-content: center;
+}
+.form-msg {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-color: #d2ddd9;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid $base-color;
+  &_show {
+    display: flex;
+    color: $base-color;
+  }
+  &__text {
+    margin-bottom: 2rem;
+    width: 300px;
+  }
+  &__btn {
+    @include btn($base-color, $base-color, #fff);
+    &:active, &:focus{
+      outline: none;
+    }
+    &:hover {
+      transition: 0.5s;
+      border: 0.0625rem solid #fff;   
+      background-color: #fff;
+      color: $base-color;
+    }
+  }
+}
+
+.delivery-title {
+  color: $base-color;
+  @include title;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+@media (max-width: 460px) { .delivery-title {font-size: 2.5rem;}}
+.delivery-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: AlegreyaSans-Regular;
+  width: 96%;
+  font-size: 1.125rem;
+  text-align: left;
+  color: $base-color;
+  line-height: 1.875rem;
+  transition: 0.5s;
+  & input:focus {
+    outline: 0.125rem solid $base-color;
+   }
+   
+   & textarea:focus {
+     outline: 0.125rem solid $base-color;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+  .delivery-title {
+    margin-bottom: 2.5rem;
+  }
+  .delivery-form {
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+.form-left {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  
+  &__input {
+    border: none;
+    padding: 1.0625rem 0.6875rem;
+    margin-bottom: 1.25rem;
+    color: #000;
+    width: 100%;
+  }
+}
+.form-name {
+  max-width: 220px;
+  width: 100%;
+  flex-basis:48%
+}
+.form-number {
+  max-width: 220px;
+  width: 100%;
+  flex-basis:48%
+}
+.form-streat {
+  max-width: 460px;
+  width: 100%;
+  flex-basis:100%
+}
+@each $form in (house, corps, door, float) {
+  .form-#{$form} { max-width: 100px;width: 100%;flex-basis:23%}
+}
+
+@media (max-width: 768px) {
+  .form-left input {
+    padding: 0.8125rem 0.6875rem 0.625rem;
+    font-size: 14px;
+    height: 35px;
+    margin-bottom: 0;
+  }
+}
+.delivery-form {
+  &__error {
+    transition: 0.5s;
+    background-color: rgba($color: #be2424, $alpha: 0.2);
+  }
+}
+.form-right {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  & textarea {
+    border: none;
+    padding: 1.0625rem 0.6875rem;
+    margin-bottom: 1.25rem;
+    color: #000;
+    width: 100%;
+    height: 11.25rem;
+    resize: none;
+    
+  }
+  & input {
+    display: none;
+  }
+}
+.form-comments {
+  flex-basis: 100%;
+  width: 98%;
+  max-width: 28.75rem;
+}
+.form-payment {
+    padding: 0.3125rem;
+    display: inline-flex;
+    cursor: pointer;
+  align-items: center;
+  &__radio {
+    display: inline-block;
+    height: 1.125rem;
+    width: 1.125rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #fff;
+    background-color: #fff;
+    margin-right: 0.625rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 0.5625rem;
+        width: 0.5625rem;
+        border-radius: 50%;
+        background-color: $base-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 0;
+        
+    }
+
+  }
+  
+      
+    &__check:checked + .form-payment__radio::after {
+           opacity: 1;
+  }
+
+  &__checkbox {
+    display: inline;
+    height: 1.125rem;
+    width: 1.125rem;
+    background-color: #fff;
+    position: relative;
+    margin-right: 0.625rem;
+    &::after {
+      content: "";
+      display: inline-flex;
+      position: absolute;
+      /*
+      width: 13px;
+      height: 11px;
+      background-image: url(/icons/sprite.svg);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      */
+      
+      
+      width: 0.25rem;
+      height: 0.4375rem;
+      border: solid $base-color;
+      border-width: 0 0.1875rem 0.1875rem 0;
+      top: 0; left: 0; bottom: 0.125rem; right: 0;
+      margin: auto;
+      
+      transform: rotate(45deg);
+      opacity: 0;
+      
+    }
+  }
+  & input[type=checkbox]:checked+ .form-payment__checkbox::after{
+    opacity: 1;
+  }
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-btn {
+  width: 28.75rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center
+}
+.form-order {
+  @include btn($base-color, $base-color, #fff);
+  align-self: flex-end;
+  justify-self: flex-end;
+  transition: 0.5s;
+  &:active, &:focus{
+    outline: none;
+  }
+  &:hover {
+    transition: 0.5s;
+    border: 0.0625rem solid #fff;   
+    background-color: #fff;
+    color: $base-color;
+  }
+}
+.form-clear {
+  margin-left: 1.850rem;
+  color: #000;
+  border: 0;
+  background-color: transparent;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active, &:focus{
+    outline: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-comments textarea {
+    height: 5rem;
+  }
+  .form-left {
+    width: 98%;
+    max-width: 28.75rem;
+  }
+  .form-right {
+    width: 98%;
+    max-width: 28.75rem;
+  }
+  .form-btn {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  .form-right { 
+    justify-content: center;
+}
+}

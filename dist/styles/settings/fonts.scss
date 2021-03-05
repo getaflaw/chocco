@@ -1,0 +1,8 @@
+@each $fonts in (AlegreyaSans-Black, AlegreyaSans-BlackItalic, BoldItalic,  AlegreyaSans-Bold, AlegreyaSans-ExtraBold, AlegreyaSans-ExtraBoldItalic, AlegreyaSans-Italic, AlegreyaSans-Light, AlegreyaSans-LightItalic, AlegreyaSans-Medium, AlegreyaSans-MediumItalic, AlegreyaSans-Regular, AlegreyaSans-Thin, AlegreyaSans-ThinItalic) 
+{
+    @font-face {
+        font-family: #{$fonts};
+        src: url(../../fonts/#{$fonts}.ttf);
+    }
+}
+
